@@ -7,7 +7,7 @@ def hello():
     return render_template('index.html')
 	
 @app.route('/apropos')
-def hello():
+def hello2():
     return render_template('apropos.html')
 
 if __name__ == '__main__':
