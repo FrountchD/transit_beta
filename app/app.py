@@ -46,7 +46,7 @@ def contactPage():
 
 @app.route("/testmail")
 def testmailPage():
-  msg = Message('AZURE - Hello from the other side!', sender =   'transitionalimentairebe@gmail.com', recipients = ['transitionalimentairebe@gmail.com'])
+  msg = Message('AZURE WORKING - Hello from the other side!', sender =   'transitionalimentairebe@gmail.com', recipients = ['transitionalimentairebe@gmail.com'])
   msg.body = "This is a test that the mailing functions correctly"
   mail.send(msg)
   return "Message sent!"
