@@ -5,10 +5,11 @@ from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
 import os
 
+
 app = Flask(__name__)
 
 credential =  DefaultAzureCredential()
-keyVaultName = os.environment("KEY_VAULT_NAME")
+keyVaultName = os.environ["KEY_VAULT_NAME"]
 client     =  SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
 
 app.config.update(dict(
