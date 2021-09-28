@@ -2,3 +2,4 @@ flask
 flask_mail
 azure-identity
 azure-keyvault-secrets
+os
