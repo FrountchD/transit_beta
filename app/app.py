@@ -10,8 +10,9 @@ app = Flask(__name__)
 
 credential =  DefaultAzureCredential()
 keyVaultName = os.environ["KEY_VAULT_NAME"]
+print(keyVaultName)
 client     =  SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
-
+print(client.list_properties_of_secret_versions('passwordmail'))
 #print(client.get_secret("passwordmail"))
 
 app.config.update(dict(
