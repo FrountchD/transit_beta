@@ -3,6 +3,7 @@ from flask_mail import Mail, Message
 
 from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
+import os
 
 app = Flask(__name__)
 
