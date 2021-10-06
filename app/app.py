@@ -7,6 +7,7 @@ import os
 
 from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
+
 credential =  DefaultAzureCredential()
 keyVaultName = os.environ["KEY_VAULT_NAME"]
 client     =  SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
@@ -71,4 +72,4 @@ def indexPage():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=80, debug=True)
