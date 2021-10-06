@@ -1,0 +1,468 @@
+
+* {
+	box-sizing: border-box;
+}
+
+#bodyT{
+	font-size:0;
+	margin:0px;
+	margin-top:0;
+	margin-bottom:0;
+	margin-right:0px;
+	padding-right:0;
+	padding-top:0;
+	padding:0px;
+	background-color:#f0fff0;
+	/*background-color: #161c2d;*/
+   box-sizing: border-box;
+
+
+}
+
+.navbar{
+
+	padding-right:0;
+	padding-left:0;
+	margin-right:0;
+	margin-left:0;
+	max-width:100%;
+	overflow-x:hidden;
+}
+.navbar-nav{
+	padding-right:0;
+	padding-left:0;
+	margin-right:0;
+	margin-left:0;
+
+}
+
+.navbar-default{
+
+}
+
+.navbar-custom {
+    /* background-color: white; */
+
+	background: rgba(0,0,0,0.6);
+	color: white;
+	max-width:100%;
+
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,139,34, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(34,139,34,0.8);
+}
+
+
+a {
+
+	color: white;
+	font-family: "Lucida Console", Courier, monospace;
+}
+a:hover{
+	color: green;
+}
+
+p.labelsize{
+	font-size:12px;
+}
+
+#labelsize{
+	font-size:12px;
+}
+
+.control-label{
+	font-size: 12px;
+}
+
+#testref{
+	align:left;
+}
+
+.body .p {
+font-size:10px;
+}
+
+.body .labelsize{
+	font-size:12px;
+}
+
+.jumbotron {
+
+  text-align: center;
+  background-position: center center;
+  padding-right:0;
+  margin-right:0;
+
+}
+
+
+.jumbotron_special{
+  background-image: url("/static/jumbotron_bg.jpg");
+  background-size: cover;
+  /* width: 100%; */
+  min-height: 600px;
+
+}
+
+.jumbotron h1{
+    color: white;
+	font-family: "Brush Script MT", cursive;
+	text-align: left;
+
+}
+
+.jumbotron p{
+    color: white;
+	font-family: "Brush Script MT", cursive;
+	text-align: left;
+	text-padding-left: -20px;
+	font-size: 16px;
+}
+
+#Apropos h1{
+	font-size: 20px;
+}
+
+#Apropos p{
+	font-size: 16px;
+}
+
+#QuiSuisJeContent p, label{
+	font-size: 16px;
+}
+
+#contactFormFinal p, label, button{
+	font-size:16px;
+	background-color:white;
+}
+#contactFormFinal2 p, label, button{
+	font-size:16px;
+	background-color:white;
+}
+
+#contactForm label{
+	font-size: 16px;
+}
+
+.mylabel{
+	font-color:red;
+	font-size:16px;
+}
+
+#hellotest{
+	font-size: 16px;
+}
+
+label{
+	font-size: 16px;
+}
+
+label.hellotest{
+	font-size:16px;
+}
+
+#imgperso{
+	border-radius: 50%;
+	width:80%;
+}
+
+#ContactContent p{
+	font-size: 16px;
+}
+
+
+.footerText {
+	font-size: 12px;
+	color: white;
+}
+
+
+
+
+#modalId li, #modalId p{
+	font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  text-align: center;
+	padding-top:10px;
+	padding-bottom:10px;
+
+
+}
+
+body.modal-open{
+	overflow: visible;
+	position: inherit;
+}
+.topright{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder {color: #999999;}
+input:-moz-placeholder {color: #999999;}
+input::-moz-placeholder {color: #999999;}
+input:-ms-input-placeholder {color: #999999;}
+
+textarea::-webkit-input-placeholder {color: #999999;}
+textarea:-moz-placeholder {color: #999999;}
+textarea::-moz-placeholder {color: #999999;}
+textarea:-ms-input-placeholder {color: #999999;}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+.container-contact100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.contact100-map {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.wrap-contact100 {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 43px 88px 57px 190px;
+}
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #b2b2b2;
+  margin-bottom: 26px;
+}
+
+.label-input100 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  text-align: right;
+
+  position: absolute;
+  top: 14px;
+  left: -180px;
+  width: 160px;
+
+}
+
+/*---------------------------------------------*/
+.input100 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 0 5px;
+}
+
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+
+  background: #57b846;
+}
+
+
+/*---------------------------------------------*/
+input.input100 {
+  height: 45px;
+}
+
+
+textarea.input100 {
+  min-height: 115px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px;
+}
+
+.contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  background-color: #57b846;
+  border-radius: 25px;
+
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn i {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn:hover {
+  background-color: #333333;
+}
+
+.contact100-form-btn:hover i {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}

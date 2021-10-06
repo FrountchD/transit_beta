@@ -1,95 +1,204 @@
-<!doctype html>
+{% extends "base.html"%}
 
-<html lang="en">
-
-  <head>
-
-    <!-- Required meta tags -->
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% block content %}
 
 
 
-    <!-- Bootstrap CSS -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="/static/style.css">
 
 
-
-    <!-- <title>Hello, world!</title> -->
-
-  </head>
-
-  <body>
-
-	<!-- Navigation Bar -->
-	
-				<nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top  navbar-custom">
-	  <!-- <div class="navbar-header">
-		<a href="#" class="navbar-brand">Company Logo</a>
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resNav">
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		</button>
-	  </div> -->
-	  <!-- <div class="collapse navbar-collapse" id="resNav"> -->
-	  
-					<ul class="nav navbar-nav navbar-right ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="#">Accueil</a></li>
-						<li class="nav-item"><a class="nav-link" href={{url_for('aProposPage')}}>&Agrave propos</a></li>
-						<li class="nav-item"><a class="nav-link" href={{url_for('enquetePage')}}>Enquete</a></li>
-						<li class="nav-item"><a class="nav-link" href={{url_for('contactPage')}}>Contact</a></li>
-					</ul>
-	  <!-- </div> -->
-	</nav>  
-
-	<!-- End of Navigation Bar -->
+<div class="row gx-4 gx-lg-5">
+	<div class="col-12 ">
+		<p style="font-size:12px"> <br> <br> <br> </p>
+	</div>
+</div>
 
 
-	
-	<div class="jumbotron jumbotron_special">
-			<div style="padding-left: 100px; padding-top: 50px;">
-			
-				<h1>La transition alimentaire... et toi ? </h1>
-				<!-- <div class="container">
-					<img src="image1.jpg" width="30px" height="30px">
-				</div> -->
-				<br>
-				<br>
-				<p> Bienvenue sur le site d'un citoyen bruxellois qui, comme toi, voudrait contribuer à un monde où notre alimentation serait produite, véhiculée et consommée d'une manière plus éco-responsable... 
-				     et qui a besoin de ton avis et de ton savoir sur la question pour avancer!
-				</p>
-				
-				<!-- <button type="button" class="btn btn-primary">Bouton</button>
-				<a class="btn btn-gradient green mini" href="#" role="button">Lien</a> -->
-				<a href="https://www.survio.com/survey/d/F1J6G9N8A9J9K6A6L" target="_blank" style="display:inline-block;text-decoration:none;background-color:#1dad82;color:#ffffff;font-family:Arial, Helvetica, sans-serif;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:11px 25px;font-size:14px;line-height:180%;font-weight: bold;letter-spacing: 0.5px">Démarrez le questionnaire !</a>
+<!-- Qui suis-je ? -->
 
 
-			</div>
+
+<div class="row gx-4 gx-lg-5 justify-content-center" id="QuiSuisJe">
+	<div class="col-11 col-lg-10 col-xl-8">
+		<h2 class="mt-0 text-center">Qui suis-je ? </h2>
+		<hr class="divider" />
+
+	</div>
+</div>
+
+
+
+<div class="row gx-4 gx-lg-5" id="QuiSuisJeContent">
+
+	<div class="col-1 col-lg-2">
+	</div>
+
+	<div class="col-11 col-lg-10 col-xl-8" >
+		<p style="float:left"> <img style="max-height:200px; max-width:200px" src="/static/image_perso.jpg" id="imgperso"> </p>
+		<p class="text-muted mb-5"> Moi c’est François, 38 ans, papa de 2 enfants, être humain de nature curieuse, ingénieur de formation, ex-consommateur totalement endormi.</p>
+		<p class="text-muted mb-5"> Comme beaucoup d’entre nous, j’ai été sonné par la crise sanitaire… mais surtout par sa gestion qui est apparue alors si « ultra-capitaliste » à mes yeux. Les messages que j’ai entendus sur la toute-puissance de la grande distribution, de l’agriculture et de l’élevage intensifs sous-jacents, ont réveillé en moi ce besoin d’en savoir plus… et de réfléchir comment je pourrais amener ma pierre à l’édifice de la transition alimentaire.</p>
+		<p class="text-muted mb-5 text center" > « Commence par changer en toi ce que tu veux changer autour de toi »</p>
+		<p class="text-muted mb-5"> Comme l’idée d’opérer une transition alimentaire complète c’est franchement déboussolant, j'ai décidé de débuter cette année 2021 avec un défi personnel ; Celui de ne plus mettre un pied dans un commerce de la grande distribution ! </p>
+		<p class="text-muted mb-5"> Je n’ai pas fait ça avec la seule attitude « anti » mais plutôt parce que j’étais convaincu que ça me permettrait de découvrir plein de nouvelles choses et de développer une vision différente du « pas de temps, pas d’argent pour ça » que j’entends quasi tous les jours autour de moi.  </p>
+		<p class="text-muted mb-5"> Bon, autant être honnête avec toi, ce n’est pas encore gagné et j’ai encore beaucoup à apprendre. Cependant, je commence à avoir cette impression au fond de moi que je suis peut-être un peu plus prêt pour partager ce que j’ai appris, ou du moins pour participer à une initiative de partage…
+			Ça ne te parle pas un peu aussi, toi ? </p>
+		<br>
+	</div>
+
+	<div class="col-6 col-lg-8 col-xl-6">
+	</div>
+
+</div>
+
+
+<div class="row gx-4 gx-lg-5">
+	<div class="col-12 ">
+		<p style="font-size:12px"> <br> <br> <br> </p>
+	</div>
+</div>
+
+<!-- A propos -->
+
+<div class="row gx-4 gx-lg-5">
+	<div class="col-12 ">
+		<p style="font-size:12px"> <br> <br> <br> </p>
+	</div>
+</div>
+
+
+<div class="row gx-4 gx-lg-5 justify-content-center" id="Apropos">
+	<div class="col-11 col-lg-10 col-xl-8">
+
+		<h2 class="mt-0 text-center">&Agrave propos </h2>
+		<hr class="divider" />
+
+		<p class="text-muted mb-5">  Il est évident aux yeux d’un nombre toujours plus grand d’acteurs du secteur alimentaire et des consommateurs que le mode de consommation actuel, industrialisé à outrance, souvent peu respectueux de l’environnement,… touche à ses limites et que des alternatives à grande échelle, mais peut-être aussi à de plus petites échelles d’abord, doivent être développées. </p>
+		<p class="text-muted mb-5" style=""> « Plus facile à dire qu’à faire ! » </p>
+		<p class="text-muted mb-5"> Mon impression de consommateur est d’être emporté dans un tsunami d’informations que je n’arrive plus à gérer et où je n’arrive pas à saisir la situation dans laquelle je me trouve. Mon constat est que j’ai du mal à trouver le temps et l’énergie pour explorer des alternatives en luttant contre cette stratégie purement monétaire qui ne reçoit, selon moi, que peu de pression du monde politique pour concevoir des alternatives plus durables, plus responsables, plus écologiques, plus saines.</p>
+		<p class="text-muted mb-5"> Alors que de nombreuses initiatives fleurissent (potagers collectifs, supermarchés coopératifs, sociétés relais entre producteurs et consommateurs, initiatives de recyclage, zéro-déchet, cours de cuisines spécifiques, labels bios, …), chacune amenant leur pierre à l’édifice, leur visibilité ou leur compréhension reste, à mes yeux, parfois marginale face à une industrie toute puissante et un consommateur devenu passif ou muselé par les contraintes temps et     argent. </p>
+		<p class="text-muted mb-5"> Si j’ai créé ce site, c’est avec le projet de développer un média où l’on pourrait fédérer ces idées et ces solutions existantes d’alternatives plus durables, plus bio, plus écologiques, plus saines, ... Il est évident que les dimensions pécuniaires et temporelles doivent être gardées à l’esprit mais je crois que la dimension géographique est tout aussi importante… Et si ton voisin avait en fait déjà une solution parfaite pour toi ? </p>
+		<p class="text-muted mb-5"> Parce que l’idée est de nature collaborative, j’ai créé ce questionnaire (et un formulaire de contact) pour essayer de récolter un maximum d’informations sur ta réalité de la situation, tes attentes, tes envies, tes remarques, tes propositions… afin de proposer une solution qui pourrait satisfaire le plus grand nombre de gens. </p>
+		<p class="text-muted mb-5"> Ce projet pilote a été lancé uniquement sur la commune d’Auderghem, où je vis, pour focaliser sur la réalité d'une localisation géographique spécifique, mais l'idée n'est pas de restreindre à cette seule localisation. </p>
+		<p class="text-muted mb-5"> Que tu sois acteur dans le secteur alimentaire (producteur, fournisseur, …) ou consommateur soucieux ou intéressé, ton avis m’intéresse ! Alors, n’hésites plus ! Envoie tout ce que t’as ! </p>
+
+
+	</div>
+
+</div>
+
+<div class="row gx-4 gx-lg-5">
+	<div class="col-12 ">
+		<p style="font-size:12px"> <br> <br> <br> </p>
+	</div>
+</div>
+
+
+
+
+
+<!-- Contact -->
+
+<p> <br> </p>
+
+<div class="row gx-4 gx-lg-5 justify-content-center" id="ContactT">
+	<div class="col-11 col-lg-10 col-xl-8">
+		<h2 class="mt-0 text-center">Entrons en contact ! </h2>
+		<hr class="divider" />
+	</div>
+</div>
+
+
+<div class="row gx-4 gx-lg-5 justify-content-center" id="ContactContent">
+	<div class="col-11 col-lg-10 col-xl-8">
+			<p class="text-muted mb-5">Envie de proposer une idée, une envie, une remarque, une vérité, une info ? Ou simplement de poser une question... Tout m'intéresse ! </p>
+		</div>
 	</div>
 
 
-
-    
-
-    <!-- Optional JavaScript -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Formulaire de Contact -->
 
 
-	<script src= "/static/menu_style.js"></script>
+<div class="row gx-4 gx-lg-5 justify-content-center mb-5" id="contactFormFinal">
+	<div class="col-8 col-lg-6 col-xl-4">
+		<div class="wrap-contact100">
 
-  </body>
+			<form class="contact100-form validate-form" method="post">
 
-</html>
+				<div class="wrap-input100 validate-input">
+					{{form.hidden_tag()}}
+					{{form.name.label(class="label-input100")}} {{form.name(class="input100", placeholder="Nom et Prenom")}}
+					<span class="focus-input100"></span>
+				</div>
 
+				<div class="wrap-input100 validate-input">
+					{{form.hidden_tag()}}
+				  {{form.adresseMail.label(class="label-input100")}} {{form.adresseMail(class="input100", placeholder="nom@exemple.com")}}
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input">
+					{{form.hidden_tag()}}
+					{{form.codePost.label(class="label-input100")}} {{form.codePost(class="input100", placeholder="1160")}}
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input">
+					{{form.hidden_tag()}}
+					{{form.textMess.label(class="label-input100")}} {{form.textMess(class="input100", placeholder="Ecris-moi ton message ici ...")}}
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					{{form.submit(class="contact100-form-btn")}}
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+</div>
+
+
+
+	<!--=== Modal - displayed upon submission of the form ===-->
+<div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+
+					<div class="modal-header">
+						<h2 class="modal-title"> Confirmation de l'envoi </h2>
+						<button type='button' class="close" aria-label="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+	        <div class="modal-body p-2" id="flashes">
+	          {% with messages = get_flashed_messages() %}
+	          {% if messages %}
+	            {% for message in messages %}
+	            <p>{{ message }}</p>
+	            {% endfor %}
+	          {% endif %}
+	          {% endwith %}
+	        </div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Footer -->
+
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3 footerText" style="background-color: rgba(0, 0, 0, 0.6);">
+    <strong>© 2021 Copyright: Francois Dehouck.</strong>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+{% endblock %}
