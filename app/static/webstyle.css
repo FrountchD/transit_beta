@@ -1,180 +1,78 @@
-
-* {
-	box-sizing: border-box;
-}
+/* body */
 
 #bodyT{
 	font-size:0;
 	margin:0px;
-	margin-top:0;
-	margin-bottom:0;
-	margin-right:0px;
-	padding-right:0;
-	padding-top:0;
 	padding:0px;
 	background-color:#f0fff0;
-	/*background-color: #161c2d;*/
-   box-sizing: border-box;
-
-
 }
 
-.navbar{
 
-	padding-right:0;
-	padding-left:0;
-	margin-right:0;
-	margin-left:0;
-	max-width:100%;
-	overflow-x:hidden;
-}
-.navbar-nav{
-	padding-right:0;
-	padding-left:0;
-	margin-right:0;
-	margin-left:0;
-
-}
-
-.navbar-default{
-
-}
+/* Navigation bar */
 
 .navbar-custom {
-    /* background-color: white; */
-
 	background: rgba(0,0,0,0.6);
 	color: white;
 	max-width:100%;
-
-}
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,139,34, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
   border-color: rgb(34,139,34,0.8);
 }
 
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,139,34, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 a {
-
 	color: white;
-	font-family: "Lucida Console", Courier, monospace;
+	font-family: "Verdana", sans-serif;  #font-family: "Lucida Console", Courier, monospace;
 }
+
 a:hover{
 	color: green;
 }
 
-p.labelsize{
-	font-size:12px;
-}
 
-#labelsize{
-	font-size:12px;
-}
-
-.control-label{
-	font-size: 12px;
-}
-
-#testref{
-	align:left;
-}
-
-.body .p {
-font-size:10px;
-}
-
-.body .labelsize{
-	font-size:12px;
-}
+/* JUMBOTRON STYLING */
 
 .jumbotron {
-
-  text-align: center;
-  background-position: center center;
-  padding-right:0;
-  margin-right:0;
-
+	background-position: center center;  /* image centering */
 }
-
 
 .jumbotron_special{
   background-image: url("/static/jumbotron_bg.jpg");
   background-size: cover;
   /* width: 100%; */
   min-height: 600px;
-
 }
 
-.jumbotron h1{
-    color: white;
-	font-family: "Brush Script MT", cursive;
-	text-align: left;
+.jumbotron h1, .jumbotron p{
+  color: white;
+	font-family: "Verdana", sans-serif; #"Brush Script MT", cursive;
+	text-align: justify;
 
 }
 
 .jumbotron p{
-    color: white;
-	font-family: "Brush Script MT", cursive;
-	text-align: left;
 	text-padding-left: -20px;
-	font-size: 16px;
+	font-size: 1.2rem;
 }
 
-#Apropos h1{
-	font-size: 20px;
-}
+/* end jumbotron styling */
 
-#Apropos p{
-	font-size: 16px;
-}
 
-#QuiSuisJeContent p, label{
-	font-size: 16px;
-}
 
-#contactFormFinal p, label, button{
-	font-size:16px;
-	background-color:white;
-}
-#contactFormFinal2 p, label, button{
-	font-size:16px;
-	background-color:white;
-}
+/* Qui-suis-je, A propos, Contact et Footer */
 
-#contactForm label{
-	font-size: 16px;
-}
-
-.mylabel{
-	font-color:red;
-	font-size:16px;
-}
-
-#hellotest{
-	font-size: 16px;
-}
-
-label{
-	font-size: 16px;
-}
-
-label.hellotest{
-	font-size:16px;
+#Apropos p, #QuiSuisJeContent p, #ContactContent p{
+	font-size: 1rem;
 }
 
 #imgperso{
 	border-radius: 50%;
 	width:80%;
 }
-
-#ContactContent p{
-	font-size: 16px;
-}
-
 
 .footerText {
 	font-size: 12px;
@@ -183,9 +81,50 @@ label.hellotest{
 
 
 
+/* fin paragraphes texte */
+
+
+/* contact form */
+
+#contactFormFinal{
+	background-color: white;
+}
+
+#contactFormFinal p, label, button{
+	font-size:16px;
+	background-color:white;
+}
+
+label{
+	font-size: 16px;
+}
+
+input {
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 1px solid #57b846;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #modalId li, #modalId p{
-	font-family: Poppins-Regular;
+	font-family: "Verdana", sans-serif; # Poppins-Regular;
   font-size: 15px;
   color: #808080;
   line-height: 1.2;
@@ -195,6 +134,9 @@ label.hellotest{
 
 
 }
+
+
+/* Modal specifics */
 
 body.modal-open{
 	overflow: visible;
@@ -206,7 +148,23 @@ body.modal-open{
 	right:0px;
 }
 
-/*---------------------------------------------*/
+
+
+
+/* Form specifics */
+
+.wrap-contact100 {
+  background: #fff;
+  border-radius: 10px;
+
+}
+
+
+
+.control-label{
+	font-size: 12px;
+}
+
 input {
 	outline: none;
 	border: none;
@@ -228,29 +186,16 @@ textarea {
   border: none;
 }
 
+
+/* Needed for initial form.
+
+
 textarea:focus, input:focus {
   border-color: transparent !important;
 }
+*/
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
-
-input::-webkit-input-placeholder {color: #999999;}
-input:-moz-placeholder {color: #999999;}
-input::-moz-placeholder {color: #999999;}
-input:-ms-input-placeholder {color: #999999;}
-
-textarea::-webkit-input-placeholder {color: #999999;}
-textarea:-moz-placeholder {color: #999999;}
-textarea::-moz-placeholder {color: #999999;}
-textarea:-ms-input-placeholder {color: #999999;}
 
 /*---------------------------------------------*/
 button {
@@ -271,6 +216,18 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 
+
+
+.contact100-map {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
 .container-contact100 {
   width: 100%;
   min-height: 100vh;
@@ -288,21 +245,6 @@ iframe {
   z-index: 1;
 }
 
-.contact100-map {
-  position: absolute;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.wrap-contact100 {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-}
 
 
 
@@ -326,6 +268,10 @@ iframe {
 /*------------------------------------------------------------------
 [ Input ]*/
 
+.inputunderline{
+	border-bottom: 1px solid #b2b2b2;
+}
+
 .wrap-input100 {
   width: 100%;
   position: relative;
@@ -334,7 +280,7 @@ iframe {
 }
 
 .label-input100 {
-  font-family: Poppins-Regular;
+  font-family: "Verdana", sans-serif; #Poppins-Regular;
   font-size: 15px;
   color: #808080;
   line-height: 1.2;
@@ -349,7 +295,7 @@ iframe {
 
 /*---------------------------------------------*/
 .input100 {
-  font-family: Poppins-Regular;
+  font-family: "Verdana", sans-serif; #Poppins-Regular;
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
@@ -437,7 +383,7 @@ textarea.input100 {
   background-color: #57b846;
   border-radius: 25px;
 
-  font-family: Poppins-Regular;
+  font-family: "Verdana", sans-serif; #Poppins-Regular;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -466,3 +412,30 @@ textarea.input100 {
   -o-transform: translateX(10px);
   transform: translateX(10px);
 }
+
+
+
+
+
+
+/*  display specifics */
+
+input::-webkit-input-placeholder {color: #999999;}
+input:-moz-placeholder {color: #999999;}
+input::-moz-placeholder {color: #999999;}
+input:-ms-input-placeholder {color: #999999;}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea::-webkit-input-placeholder {color: #999999;}
+textarea:-moz-placeholder {color: #999999;}
+textarea::-moz-placeholder {color: #999999;}
+textarea:-ms-input-placeholder {color: #999999;}
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
