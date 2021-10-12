@@ -50,14 +50,51 @@ a:hover{
 .jumbotron h1, .jumbotron p{
   color: white;
 	font-family: "Verdana", sans-serif; #"Brush Script MT", cursive;
-	text-align: justify;
+
 
 }
 
 .jumbotron p{
 	text-padding-left: -20px;
-	font-size: 1.2rem;
+	font-size:1rem;
+	text-align: justify;
+
 }
+
+.jumbotron h1{
+	font-size:1.6rem;
+	text-align: center;
+}
+.paddingLeft{
+	padding-left:30px;
+}
+.alignbutton{
+	text-align:center;
+}
+@media (min-width:768px) {
+	.jumbotron p{
+		font-size: 1.2rem;
+	}
+	 .jumbotron h1{
+		 font-size:2rem;
+		 text-align:left;
+	 }
+	.paddingLeft{
+		padding-left: 50px;
+	}
+	.alignbutton{
+		text-align:left;
+	}
+}
+@media (min-width:992px) {
+	.paddingLeft{
+		padding-left:100px;
+	}
+}
+
+
+
+
 
 /* end jumbotron styling */
 

@@ -14,7 +14,7 @@ client     =  SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/",
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY']= client.get_secret('passwordcfr').value
+app.config['SECRET_KEY']=client.get_secret('passwordcfr').value
 
 
 class contactForm(FlaskForm):
