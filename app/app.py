@@ -18,7 +18,7 @@ app.config['SECRET_KEY']=client.get_secret('passwordcfr').value
 
 
 class contactForm(FlaskForm):
-    name        = StringField("Nom Prenom")
+    name        = StringField("Nom Prénom")
     adresseMail = EmailField("Adresse mail")
     codePost    = StringField("Code Postal")
     textMess    = TextAreaField("Ton Message")

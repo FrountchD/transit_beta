@@ -27,7 +27,7 @@
 	<div class="col" >
 		<p style="float:left"> <img style="max-height:200px; max-width:200px" src="/static/image_perso.jpg" id="imgperso"> </p>
 		<p class="text-muted mb-5" style="text-align:justify"> Moi c’est François, 38 ans, papa investi, être de nature curieuse, ingénieur de formation, ex-consommateur totalement endormi.</p>
-		<p class="text-muted mb-5" style="text-align:justify"> Comme beaucoup d’entre nous, j’ai été sonné par la crise sanitaire. Lors du premier confinement, j'ai été particulièrement surpris par ces files interminables devant les grandes surfaces soudainement devenues "indispensables"... au moment même ou quasi toute autre source d'approvisionnement alimentaire étaient à l'arrêt.  Ce constat de la toute-puissance de la grande distribution, de l’agriculture et de l’élevage intensifs sous-jacents, ont réveillé en moi ce besoin d’en savoir plus… et de réfléchir comment je pourrais amener ma pierre à l’édifice de la transition alimentaire.</p>
+		<p class="text-muted mb-5" style="text-align:justify"> Comme beaucoup d’entre nous, j’ai été sonné par la crise sanitaire. Lors du premier confinement, j'ai été particulièrement surpris par ces files interminables devant les grandes surfaces soudainement devenues "indispensables"... au moment même ou quasi toute autre source d'approvisionnement alimentaire était à l'arrêt.  Ce constat de la toute-puissance de la grande distribution, de l’agriculture et de l’élevage intensifs sous-jacents, ont réveillé en moi ce besoin d’en savoir plus… et de réfléchir comment je pourrais amener ma pierre à l’édifice de la transition alimentaire.</p>
 		<p class="text-muted mb-5" style="text-align:center" > <cite> « Commence par changer en toi ce que tu veux changer autour de toi »</cite> </p>
 		<p class="text-muted mb-5" style="text-align:justify"> Changer son alimentation en un coup, c’est franchement déboussolant ! J'ai donc décidé d'entreprendre la démarche pas à pas en débutant l'année 2021 avec un premier défi: Celui de ne plus mettre un pied dans un commerce de la grande distribution ! </p>
 
@@ -62,19 +62,6 @@
 	<div class="col">
 
 
-
-
-		Des initiatives en tout genre fleurissent un peu partout (supermarchés coopératifs, potagers partagés, organisations-relais entre producteurs et consommateurs, initiatives de recyclage, stages zéro-déchet, cours de cuisines spécifiques, labels bios, etc.). Leur visibilité et leur fonctionnement restent trop souvent marginaux face à une industrie prédominante et un consommateur passif ou muselé par la contrainte temps/argent. Le monde politique fait par ailleurs peu de cas de cette situation et n’encourage que trop timidement ces options plus durables, responsables, écologiques et saines.
-
-		En tant que consommateur, je me sens régulièrement emporté dans un tsunami d’informations où je ne sais plus « par quel bout prendre » la démarche de transition alimentaire. L’énergie et le temps nécessaires requis pour explorer les alternatives existantes découragent et figent encore un peu plus la stratégie monétaire en place.
-
-		Ces constatations sont au cœur de la création de ce site. Je souhaite créer un média structuré pour fédérer les idées et solutions d’alternatives plus durables, bio, écologiques et saines.
-
-
-		L’idée centrale est d’échanger et de collaborer en théorie et en pratique. J’ai donc créé ce questionnaire et un formulaire de contact visant à récolter un max d’informations sur votre réalité à vous, vos attentes, vos envies, vos possibles (ébauches de) projets en cours, vos remarques, vos propositions… afin de proposer une solution qui rassembleraient le plus grand nombre de gens.
-
-		Ce projet pilote est lancé uniquement sur la commune d’Auderghem, où je vis, pour se focaliser sur la réalité d'une localisation géographique spécifique, mais l'idée n'est pas de restreindre à cette seule localisation.
-
 		<h2 class="mt-0 text-center">&Agrave propos </h2>
 		<hr class="divider"/>
 
@@ -86,7 +73,7 @@
 		<p class="text-muted mb-5" style="text-align:justify"> Ces constatations sont au coeur de la création de ce site. Je souhaiterais créer un média structuré où l’on pourrait fédérer ces idées et ces solutions existantes d’alternatives plus durables, bio, écologiques, et saines. Les dimensions budgétaires et temporelles restent bien sûr des variables pertinentes mais la dimension géographique l’est tout autant : et si ton voisin avait déjà une solution parfaite pour t'éviter la visite hebdomadaire du supermarché, tout en faisant découvrir de nouveaux produits locaux et bios, en t'épargnant du temps et de l'argent ?   </p>
 		<p class="text-muted mb-5" style="text-align:justify"> Parce que l’idée est de nature collaborative, j’ai créé ce questionnaire, et un formulaire de contact, afin de récolter un maximum d’informations sur votre réalité à vous, vos attentes, vos envies, vos possibles (ébauches de) projets en cours, vos remarques, vos propositions… afin de proposer une solution qui rassemblerait le plus grand nombre de gens.</p>
 		<p class="text-muted mb-5" style="text-align:justify"> Ce projet pilote est lancé uniquement sur la commune d’Auderghem, où je vis, pour se focaliser sur la réalité d'une localisation géographique spécifique, mais l'idée n'est pas de restreindre à cette seule localisation. </p>
-		<p class="text-muted mb-5" style="text-align:justify"> Que tu sois acteur dans le secteur alimentaire (producteur, fournisseur, …) ou consommateur soucieux ou intéressé, votre avis m’intéresse ! Alors, n’hésitez plus ! Envoiez tout ce que vous avez ! </p>
+		<p class="text-muted mb-5" style="text-align:justify"> Que vous soyez acteur dans le secteur alimentaire (producteur, fournisseur, …) ou consommateur soucieux ou intéressé, votre avis m’intéresse ! Alors, n’hésitez plus ! Envoiez tout ce que vous avez ! </p>
 
 	</div>
 </div>
@@ -119,10 +106,72 @@
 
 <!-- Formulaire de Contact -->
 
+<div class="container">
+
+<div class="row mx-3">
+
+ <div class="col-md-10 mx-auto pt-4" id="contactFormFinal">
+
+	<form class="" method="post">
+
+		<div class="row">
+				{{form.hidden_tag()}}
+
+				{{form.name.label(class="col-11 offset-2 col-md-4 offset-md-0 d-flex justify-content-md-end")}}
+				<div class="col-11 offset-2 col-md-8 offset-md-0 mb-4 pb-3">
+					{{form.name(class="inputunderline pb-3", placeholder="Jean Dupont")}}
+				</div>
+
+			</div>
+
+		<div class="row">
+				{{form.hidden_tag()}}
+
+				{{form.adresseMail.label(class="col-11 offset-2 col-md-4 offset-md-0 d-flex justify-content-md-end")}}
+				<div class="col-11 offset-2 col-md-8 offset-md-0 mb-4 pb-3">
+					{{form.adresseMail(class="inputunderline pb-3", placeholder="nom@exemple.com")}}
+				</div>
+
+			</div>
+
+			<div class="row">
+					{{form.hidden_tag()}}
+
+					{{form.codePost.label(class="col-11 offset-2 col-md-4 offset-md-0 d-flex justify-content-md-end")}}
+					<div class="col-11 offset-2 col-md-8 offset-md-0 mb-4 pb-3">
+						{{form.codePost(class="inputunderline pb-3", placeholder="nom@exemple.com")}}
+					</div>
+
+				</div>
+
+				<div class="row">
+						{{form.hidden_tag()}}
+
+						{{form.textMess.label(class="col-11 offset-2 col-md-4 offset-md-0 d-flex justify-content-md-end")}}
+						<div class="col-11 offset-2 col-md-8 offset-md-0 mb-4 pb-3">
+							{{form.textMess(class="inputunderline pb-3", placeholder="Ecris-moi ton message ici")}}
+						</div>
+
+					</div>
+
+				<div class="row">
+					<div class="col-4 offset-2 col-md-4 offset-md-4 pb-4 ">
+						{{form.submit(class="contact100-form-btn")}}
+					</div>
+				</div>
+
+	</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
 <!-- <div class="container pt-3">
 	<div class="row gx-4 gx-lg-5 justify-content-center mb-5" >
 		<div class="col-lg-6" id="contactFormFinal"> -->
-			<form class="form-control ml-auto mr-auto border-0 validate-form" id="contactFormFinal" method="post">
+<!--			<form class="form-control ml-auto mr-auto border-0 validate-form" id="contactFormFinal" method="post">
 
 				<div class="form-group">
 					{{form.hidden_tag()}}
@@ -135,6 +184,7 @@
 					{{form.codePost.label}} {{form.codePost(class="inputunderline", placeholder="1160")}}
 				</div>
 			</form>
+			-->
 <!--
 		</div>
 
@@ -142,12 +192,6 @@
 </div>
 
 -->
-
-<div class="container pt-3">
-	<div class="row gx-4 gx-lg-5 justify-content-center mb-5" >
-<p style="font-size:20px;"> HELLO WORLD </p>
-		</div>
-	</div>
 
 
 
