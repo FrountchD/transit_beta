@@ -14,7 +14,7 @@ client     =  SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/",
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY']=client.get_secret('passwordcfr').value
+app.config['SECRET_KEY']= client.get_secret('passwordcfr').value
 
 
 class contactForm(FlaskForm):
@@ -69,6 +69,10 @@ def indexPage():
 
 
     return render_template('index.html', form=form, name=name)
+
+@app.route('/questionnaire')
+def questionnaire():
+    return render_template('questionnaire.html')
 
 
 if __name__ == '__main__':

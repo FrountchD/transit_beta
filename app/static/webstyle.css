@@ -47,6 +47,18 @@ a:hover{
   min-height: 600px;
 }
 
+.jumbotron::before{
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background-color:rgba(0,0,0,0.5);
+
+}
+
 .jumbotron h1, .jumbotron p{
   color: white;
 	font-family: "Verdana", sans-serif; #"Brush Script MT", cursive;
