@@ -38,12 +38,12 @@
 
 	<div class="section s2">
 
-	<div class="container pt-5">
+	<div class="container pt-5 mb-4">
 
-			<div class="row gx-4 gx-lg-5 justify-content-left mb-5" id="QuiSuisJe">
+			<div class="row gx-4 gx-lg-5 justify-content-left" id="QuiSuisJe">
 				<div class="col">
-					<h2 class="mt-0 ">Une transition alimentaire qui s'enclenche...  </h2>
-					<!--<hr class="divider" /> -->
+					<h2 class="mt-0 pb-4"> <span style="border-bottom: 6px solid #C8DDA3;padding-bottom:8px;">Une transition alimentaire qui s'enclenche...</span>  </h2>
+					<!--  <hr class="divider py-1 bg-dark" /> -->
 
 				</div>
 			</div>
@@ -88,6 +88,13 @@
 		<div class="row">
 			<div class="col-12 col-md-3  d-flex content-card">
 
+        <div class="card border-0 shadow-none">
+					<div class="card-body" style="text-align: center">
+
+            <img style="width: 100%;" src="/static/tsunami.PNG">
+
+          </div>
+        </div>
 			</div>
 
 			<div class="col-12 col-md-6  d-flex content-card">
@@ -96,7 +103,7 @@
 				<div class="card">
 					<div class="card-body" style="text-align: center">
 						<h5 class="card-title">Et le consommateur dans tout ca... </h5>
-						<p class="card-text" style="font-size:0.6rem; text-align:left;"> En tant que consommateur, je me sens réguièrement emporté dans un tsunami d’informations où je ne sais plus "par quel bout prendre" la démarche de transition alimentaire. L’énergie et le temps nécessaires requis pour explorer les alternatives existantes découragent et figent encore un peu plus la stratégie monétaire en place. </p>
+						<p class="card-text" style="font-size:0.8rem; text-align:left;"> En tant que consommateur, je me sens réguièrement emporté dans un tsunami d’informations où je ne sais plus "par quel bout prendre" la démarche de transition alimentaire. L’énergie et le temps nécessaires requis pour explorer les alternatives existantes découragent et figent encore un peu plus la stratégie monétaire en place. </p>
 
 					</div>
 				</div>
@@ -105,9 +112,11 @@
 			</div>
 
 			<div class="col-12 col-md-3  d-flex content-card">
-
-			  <img style="width: 100%;" src="https://mobile.twitter.com/TymCartoon/status/1390275501915348992/photo/1">
-
+        <div class="card border-0 shadow-none">
+					<div class="card-body" style="text-align: center">
+			         <img style="width: 100%;" src="/static/initiatives_2.png">
+          </div>
+        </div>
 			</div>
 		</div>
 	</div>
@@ -271,7 +280,7 @@
 
 				<div class="card">
 					<div class="card-header">
-						<img style="width: 100%;" src="/static/farm.png">
+						<img style="width: 100%;" src="/static/farm.PNG">
 					</div>
 					<div class="card-body">
 						<h5 class="card-title">Un consomm-acteur </h5>
@@ -419,7 +428,39 @@ Que vous soyez acteur dans le secteur alimentaire (producteur, fournisseur, …)
 
 
 
+<div class="section s6">
 
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+
+  <div class="card card-custom">
+     <div class="card-avatar">
+        <img src="/static/image_perso_bw_transparent_2.png">
+     </div>
+     <div class="card-details">
+        <div class="name">François</div>
+        <div class="occupation">Prénom</div>
+
+        <div class="card-about">
+           <div class="item">
+              <span class="value">38</span>
+              <span class="label">Age</span>
+           </div>
+           <div class="item">
+              <span class="value">Attentif </span>
+              <span class="label">Papa</span>
+           </div>
+           <div class="item">
+              <span class="value">Hyper Curieux</span>
+              <span class="label">Trait</span>
+           </div>
+        </div>
+        <div class="skills">
+           <span class="value">Ingénieur de formation, ex-consommateur endormi.</span>
+        </div>
+     </div>
+  </div>
+
+</div>
 
 
 
@@ -453,8 +494,27 @@ Que vous soyez acteur dans le secteur alimentaire (producteur, fournisseur, …)
      new fullpage('#fullpage', {
 		autoScrolling: 'true',
 		responsiveHeight: 500,
-		responsiveWidth: 780
+		responsiveWidth: 1200
 		});
+
+
+    <!-- pinch zooming on iphone -->
+
+    $(document).ready(function() {
+
+        var scale = 0.7; // initial-scale
+        var r = 0.10;
+
+        $(document).bind('gesturechange',function(event){
+
+            if(event.originalEvent.scale > 1) scale = scale < 1.2 ?  scale+r : 1.2 ;
+            else scale = scale > 0.7 ? scale-r : 0.7 ;
+
+            $('meta[name=viewport]').attr('content', 'width=device-width, minimum-scale='+ scale.toFixed(2) +', maximum-scale='+ scale.toFixed(2) +', user-scalable=yes'); //
+
+        });
+    });
+
 
       <!--fullpage_api.setAllowScrolling(false);-->
     </script>
