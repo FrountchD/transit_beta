@@ -1,3 +1,8 @@
+html{
+	-webkit-text-style-adjust:100%;
+}
+
+
 .constat{
 	width:50%;
 }
