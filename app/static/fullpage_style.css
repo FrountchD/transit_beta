@@ -1,22 +1,55 @@
+.constat{
+	width:50%;
+}
+
+@media (min-width:1200px) {
+	.constat {
+		width:100%;
+	 }
+	 }
+
+
+
+/* SECITON S1 */
+
 .s1{
 	background:url('imagefond3-resized.jpg');
 	background-size: cover;
 	background-position:center top;
+	min-height: 600px;
 
+}
+
+
+.s1 h1{
+	font-size: 2rem ;
+	font-weight: bold;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+
+	color: rgba(255,255,255,1);
+	text-align: left;
+
+
+	font-family: Verdana, sans-serif;
 }
 
 
 .s1 p{
 	text-padding-left: -20px;
-	font-size:1rem;
+	font-size:1.2rem;
 	text-align: justify;
 
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+
+
+	color: rgba(255,255,255,1);
+	text-align: left;
+
+	font-family: Verdana, sans-serif;
 }
 
-.s1 h1{
-	font-size:1.6rem;
-	text-align: center;
-}
 .paddingLeft{
 	padding-left:30px;
 }
@@ -40,6 +73,40 @@
 	}
 }
 
+
+@media (min-width:992px) {
+	.s1 p{
+		font-size: 1.2rem;
+	}
+	 .s1 h1{
+		 font-size:2rem;
+		 text-align:left;
+	 }
+	.paddingLeft{
+		padding-left: 50px;
+	}
+	.alignbutton{
+		text-align:left;
+	}
+}
+
+
+@media (min-width:1200px) {
+	.s1 p{
+		font-size: 1.4rem;
+	}
+	 .s1 h1{
+		 font-size:2.2rem;
+		 text-align:left;
+	 }
+	.paddingLeft{
+		padding-left: 50px;
+	}
+	.alignbutton{
+		text-align:left;
+	}
+}
+
 /*
 .s2{
 	background: url('planet2.png');
@@ -50,40 +117,43 @@
 
 }
 */
-.s2 h1, .s2 h2, .s1 p{
-	margin-up: -4rem;
+
+
+.s2 h2{
+
+	font-size: 1.4rem;
+}
+
+@media (min-width:992px) {
+	.s2 h2{
+		font-size: 1.6rem;
+	}
+}
+
+@media (min-width:1200px) {
+	.s2 h2{
+		font-size: 1.8rem;
+	}
+}
+
+
+.s2 h1, .s2 h2{
+
+
+	margin-top: 4rem;
 
 }
 
 
-.s1 h1, .s1 h2, .s1 p{
-	color: rgba(255,255,255,1);
-	text-align: left;
-	margin-up: -4rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	font-family: Verdana, sans-serif;
-
+.card-title{
+	font-size:1.5rem;
+}
+.card-text{
+	font-size:0.8rem;
 }
 
-.alignbutton{
-	padding-left: 4rem;
 
-}
 
-.s1 h1{
-	font-size: 2rem !important;
-	font-weight: bold;
-	margin-bottom: 4rem;
-}
-
-.s1 p{
-
-	font-size: 1.2rem !important;
-	padding-right: 8rem;
-	margin-bottom: 3rem;
-
-}
 
 
 
