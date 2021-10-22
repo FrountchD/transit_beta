@@ -1,5 +1,9 @@
 html{
-	-webkit-text-style-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+
+.card-text{
+	font-size:1.2rem;
 }
 
 
@@ -153,9 +157,7 @@ html{
 .card-title{
 	font-size:1.5rem;
 }
-.card-text{
-	font-size:0.8rem;
-}
+
 
 
 
