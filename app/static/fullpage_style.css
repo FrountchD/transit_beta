@@ -3,11 +3,11 @@ html{
 }
 
 
-.s1, .s1 .fp-tableCell, .s1 .fp-slide{
+/*.s1, .s1 .fp-tableCell, .s1 .fp-slide{
 	height: auto !important;
 	min-height:100%;
 }
-
+*/
 
 .card-text{
 	font-size:0.8rem;
