@@ -5,16 +5,16 @@ from wtforms.fields.html5 import EmailField
 from flask_mail import Mail, Message
 import os
 
-#from azure.keyvault.secrets import SecretClient
-#from azure.identity import DefaultAzureCredential
+from azure.keyvault.secrets import SecretClient
+from azure.identity import DefaultAzureCredential
 
-#credential =  DefaultAzureCredential()
-#keyVaultName = os.environ["KEY_VAULT_NAME"]
-#client     =  SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
+credential =  DefaultAzureCredential()
+keyVaultName = os.environ["KEY_VAULT_NAME"]
+client     =  SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY']= 'beuh1002' #client.get_secret('passwordcfr').value
+app.config['SECRET_KEY']= client.get_secret('passwordcfr').value
 
 
 class contactForm(FlaskForm):
@@ -31,7 +31,7 @@ app.config.update(dict(
     MAIL_USE_TLS = True,
     MAIL_USE_SSL = False,
     MAIL_USERNAME = 'transitionalimentairebe@gmail.com',
-    MAIL_PASSWORD = 'beuh1002' # client.get_secret('passwordmail').value,
+    MAIL_PASSWORD =  client.get_secret('passwordmail').value,
 ))
 
 
@@ -110,4 +110,4 @@ def indexPage2():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8082, debug=True)
+    app.run(host="0.0.0.0", port=80, debug=True)
