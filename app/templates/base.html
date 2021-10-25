@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html lang="fr">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  	<link rel="stylesheet" href="/static/webstyle.css">
+  </head>
+
+  <body  id="bodyT">
+
+			<!-- Navigation bar -->
+
+					<div  style="font-size:16px;">
+						<div class="container">
+							<div class="row">
+
+								<nav class="col navbar fixed-top  navbar-expand-md   navbar-custom">
+
+									<!-- Toggler/collapsibe Button -->
+									<button class="navbar-toggler ml-auto custom-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+										<!--<span class="navbar-toggler-icon"></span>-->
+										<span class="navbar-toggler-icon">
+											<i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+										</span>
+									</button>
+
+									<!-- Navbar links -->
+									<div class="collapse navbar-collapse " id="collapsibleNavbar">
+										<ul class="navbar-nav ml-auto">
+											<li class="nav-item ml-auto active">
+												<a class="nav-link"  href="#">Accueil</a>
+											</li>
+											<li class="nav-item ml-auto">
+												<a class="nav-link"  href="#QuiSuisJe">Qui suis-je ?</a>
+											</li>
+			            		<li class="nav-item ml-auto">
+												<a id="aprop" class="nav-link"  href="#Apropos">&Agrave propos</a>
+											</li>
+											<li class="nav-item ml-auto">
+												<a class="nav-link"  href="#ContactT">Contact</a>
+											</li>
+										</ul>
+									</div>
+
+								</nav>
+
+
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					        <!-- Jumbotron -->
+
+
+					          <div class="jumbotron jumbotron-fluid jumbotron_special">
+					              <div class="paddingLeft" style="padding-top: 50px; padding-right:0; margin-right:0px;">
+
+					                    <!-- Title -->
+															<div class="container-fluid">
+																<div class="row" style="padding-bottom:3rem;">
+
+																	<!-- Display on one line for xl screens -->
+																	<div class="col-11 d-none d-xl-block">
+																		<h1 style="font-weight: bold;">
+																			S'alimenter intelligemment... T'y penses aussi toi ?
+																		</h1>
+																	</div>
+
+
+																	<div class="col-11 d-xl-none">
+ 																	<h1 style=" font-weight: bold">
+ 																		S'alimenter intelligemment...
+ 																	</h1>
+ 																 </div>
+ 																 <div class="col-1 d-xl-none">
+ 																 </div>
+																 <div class="col-11 d-xl-none">
+																	<h1 style=" font-weight: bold">
+																		T'y penses aussi toi ?
+																	</h1>
+																 </div>
+																 <div class="col-1 d-xl-none">
+																 </div>
+							                   <br><br><br><br>
+
+
+																</div>
+															</div>
+
+
+					                    <!-- Text & Button -->
+
+															<div class="container-fluid">
+
+
+					                    <div class="row "> <!---->
+					                      <div class="col-11 col-md-7">
+
+					                        <!-- Text -->
+					                        <p> Bienvenue sur le site d'un citoyen bruxellois qui, comme toi, voudrait contribuer à un monde où notre alimentation serait produite, véhiculée et consommée d'une manière plus éco-responsable.
+					                        </p>
+
+					                        <p> <br> </p>
+
+					                        <p style="padding-bottom:3rem">
+					                          Envie de te positionner ? Réponds vite à ce petit questionnaire ...
+					                        </p>
+					                        <br>
+
+					                        <!-- Button -->
+					                        <div class="alignbutton">
+					                          <!-- <a href="https://www.survio.com/survey/d/F1J6G9N8A9J9K6A6L" target="_blank" style="display:inline-block;text-decoration:none;text-align:left;background-color:#1dad82;color:#ffffff;font-family:Arial, Helvetica, sans-serif;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:11px 25px;font-size:14px;line-height:180%;font-weight: bold;letter-spacing: 0.5px">Démarrez le questionnaire !</a> -->
+																		<a href={{url_for('questionnaire')}} target="_blank" style="display:inline-block;text-decoration:none;text-align:left;background-color:#1dad82;color:#ffffff;font-family:Arial, Helvetica, sans-serif;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:11px 25px;font-size:14px;line-height:180%;font-weight: bold;letter-spacing: 0.5px">Démarrez le questionnaire !</a> -->
+					                        </div>
+					                      </div>
+					                    </div>
+														</div> <!-- end container -->
+
+					              </div>
+					          </div>
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+  <!-- Optional JavaScript -->
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+      <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>  -->
+
+	  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+			<script src='/static/custom.js'></script>
+
+    </body>
+
+  </html>
