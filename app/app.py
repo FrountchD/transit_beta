@@ -1,7 +1,7 @@
 from flask import Flask, render_template, flash, request, redirect, url_for
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
-from wtforms.fields.html5 import EmailField
+#from wtforms.fields.html5 import EmailField
 from flask_mail import Mail, Message
 import os
 
@@ -19,7 +19,7 @@ app.config['SECRET_KEY']= client.get_secret('passwordcfr').value
 
 class contactForm(FlaskForm):
     name        = StringField("Nom Prénom")
-    adresseMail = EmailField("Adresse mail")
+    adresseMail = StringField("Adresse mail")
     codePost    = StringField("Code Postal")
     textMess    = TextAreaField("Ton Message")
     submit      = SubmitField("Envoi")
