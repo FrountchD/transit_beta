@@ -1,61 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <title></title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  
-	<link rel="stylesheet" href="/static/webstyle.css">
-	<link rel="stylesheet" href="/static/fullpage_style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="icon" type="image/png" href="/static/favicon_small.png" sizes="16x16">
-
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/webstyle.css">
+	  <link rel="stylesheet" href="/static/fullpage_style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="icon" type="image/png" href="/static/favicon_small.png" sizes="16x16">
   </head>
+
+
 
   <body style="font-size:0 !important;">
 
     <div id="fullpage">
 
+
+
+
+      <!-- 1. Presentation Page  -->
+
+
       <div class="section s1 fp-auto-height-responsive fp-auto-responsive ">
 
-        <div class="container-xl">
 
-        <div class="row gx-4 gx-lg-5 justify-content-left" >
-          <div class="col-12">
+
+        <!-- Navigation bar -->
+
+  					<div  style="font-size:16px;">
+  						<div class="container">
+  							<div class="row">
+
+  								<nav class="col navbar fixed-top  navbar-expand-md   navbar-custom">
+
+  									<!-- Toggler/collapsibe Button -->
+  									<button class="navbar-toggler ml-auto custom-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  										<span class="navbar-toggler-icon">
+  											<i class="fas fa-bars" style="color:#fff; font-size:0px;"></i>
+  										</span>
+  									</button>
+
+  									<!-- Navbar links -->
+  									<div class="collapse navbar-collapse " id="collapsibleNavbar">
+  										<ul class="navbar-nav ml-auto">
+  											<li class="nav-item ml-auto active menu-size" >
+  												<a class="nav-link "  data-menuanchor="Accueil" href="#Accueil">Accueil</a>
+  											</li>
+  											<li class="nav-item ml-auto menu-size">
+  												<a class="nav-link"  data-menuanchor="Intro" href="#Intro">&Agrave propos</a>
+  											</li>
+  			            		<li class="nav-item ml-auto menu-size">
+  												<a class="nav-link"  data-menuanchor="MonParcours" href="#MonParcours">Qui suis-je ?</a>
+  											</li>
+                        <li class="nav-item ml-auto menu-size">
+                          <a class="nav-link"  data-menuanchor="LeProjet" href="#LeProjet">Projet</a>
+                        </li>
+  											<li class="nav-item ml-auto menu-size">
+  												<a class="nav-link"  data-menuanchor="Contact" href="#Contact">Contact</a>
+  											</li>
+  										</ul>
+  									</div>
+
+  								</nav>
+
+
+  							</div>
+  						</div>
+  					</div>
+
+            <!-- end Navigation bar -->
+
+
+
+
+
+
+
+
+
+
+      <!-- Intro text -->
+
+
+        <div class="container-fluid">
+
+        <div class="row gx-4 gx-lg-5 justify-content-center justify-content-xl-start" >
+      <!--    <div class="col-12">
 
               <h1>S'alimenter intelligemment... T'y penses aussi toi ?  </h1>
-          </div>
+          </div> -->
 
-        	<div class="col-12 col-xl-8">
 
-		      <p> Bienvenue sur le site d'un citoyen bruxellois qui, comme toi, voudrait contribuer à un monde où notre alimentation serait produite, véhiculée et consommée d'une manière plus éco-responsable. </p>
+              <!-- Display on one line for xl screens -->
+              <div class="col-11 d-none d-xl-block">
 
-		      <p> Envie de te positionner ? Réponds vite à ce petit questionnaire ...</p>
+                <h1 class="mt-5 pl-xl-5 mb-4" style="font-weight: bold;">
+                  S'alimenter intelligemment... T'y penses aussi toi ?
+                </h1>
+              </div>
+
+
+              <div class="col-12 d-xl-none" style="max-width:650px;">
+              <h1 class="mt-5 pt-5 pt-lg-0" style=" font-weight: bold">
+                S'alimenter intelligemment...
+              </h1>
+             </div>
+             <div class="col-12 d-xl-none mb-3" style="max-width:650px;">
+              <h1 class="mt-3" style=" font-weight: bold">
+                t'y penses aussi toi ?
+              </h1>
+             </div>
+
+           </div>
+            <div class="row row gx-4 gx-lg-5 justify-content-center justify-content-xl-start">
+
+        	<div class="col-11 col-md-9"  id="textintro">
+
+		      <p class="pl-xl-5 "> Bienvenue sur le site d'un citoyen bruxellois qui, comme toi, voudrait contribuer à un monde où notre alimentation serait produite, véhiculée et consommée d'une manière plus éco-responsable. </p>
+
+		      <p class="pl-xl-5 "> Envie de te positionner ? Réponds vite à ce petit questionnaire ...</p>
 
 		          <br>
 
 		            <!-- Button -->
-		              <div class="alignbutton mb-5">
+		              <div class="alignbutton mb-5 pl-xl-5">
 			                 <a href="https://www.survio.com/survey/d/F1J6G9N8A9J9K6A6L" target="_blank" style="display:inline-block;text-decoration:none;text-align:left;background-color:#1dad82;color:#ffffff;font-family:Arial, Helvetica, sans-serif;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:11px 25px;font-size:14px;line-height:180%;font-weight: bold;letter-spacing: 0.5px">Démarrez le questionnaire !</a>
                   </div>
 	        </div>
         </div>
       </div>
+
+        <!-- End Intro text -->
+
+
+
       </div>
 
-	<!-- Un état des lieux -->
+<!-- End 1. Presentation page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 2. Etat des lieux -->
+
 
 	<div class="section s2 fp-auto-height-responsive">
 
-	<div class="container-xl mb-4">
 
-			<div class="row gx-4 gx-lg-5 justify-content-left" id="QuiSuisJe">
+<!-- title -->
+
+	<div class="container-xl mb-0 mb-xl-4">
+
+			<div class="row gx-4 gx-lg-5 justify-content-start" id="QuiSuisJe">
 				<div class="col">
-					<h2 class="pb-4 mt-xl-5"> <span style="border-bottom: 6px solid #C8DDA3;padding-bottom:8px;">Une transition alimentaire qui s'enclenche...</span>  </h2>
+					<h2 class="pb-4 mt-xl-5 text-center text-md-left" > <span id="underlinetitle" >Il était une fois... <br class="d-md-none"/> la transition alimentaire </span>  </h2>
 					<!--  <hr class="divider py-1 bg-dark" /> -->
 
 				</div>
@@ -63,19 +182,32 @@
 
 	</div>
 
-	<div class="container-xl ">
+
+<div class="container-xl">
+
+<!--  2 containers-xl -->
+
+	<div class="container-xl mb-3 mb-xl-3">
 		<div class="row">
-			<div class="col-12 col-xl-4  d-flex content-card">
 
-				<div class="card">
-          <div class="row">
-            <div class="col-4 d-xl-none">
-              <div class="card-header">
+<!-- 3 elements: 1 content card, 1 image, 1 content-card -->
 
-                <img src="/static/planet2.png" class="card-img">
-              </div>
+
+      <!--  1st content card -->
+			<div class="col-12 mb-3 mb-xl-0 col-xl-4  d-flex ">
+
+
+				<div class="card h-100 cardsize">
+          <div class="row no-gutters h-100 cardsize">
+            <!-- IMAGE  when horizontal and vertical for small screens -->
+            <div class="col-md-4  d-xl-none d-flex card-header pt-0 pb-0 justify-content-center earthsize" style=" overflow:hidden;">
+
+                <img src="/static/planet2.png" class="card-img earthsize" style="width:100%; height:100%; object-fit:contain;">
+
             </div>
-            <div class="col-8 col-xl-12">
+
+            <!-- TEXTE -->
+            <div class="col-md-8  col-xl-12">
 					         <div class="card-body">
 						               <h5 class="card-title"> Un constat ! </h5>
 						                <p class="card-text"> Ceci sonne aujourd’hui comme une évidence pour un nombre croissant d’acteurs du secteur alimentaire et de consommateurs : le mode de consommation actuel hyper-industrialisé et peu soucieux de l’environnement touche à ses limites. Des alternatives à petite et/ou à plus grande échelle doivent être réfléchies et développées.
@@ -83,28 +215,36 @@
 
 					         </div>
              </div>
+             <!-- end -->
         </div>
 				</div>
 
-			</div>
+			</div> <!-- end card 1 -->
 
-      <div class="d-none d-xl-block col-xl-4">
-			 <div class="d-flex my-auto content-card">
 
+      <!--  the image -->
+
+      <div class="d-none d-xl-block col-xl-4" style="margin-top:15px;">
+			 <div class="d-flex my-auto ">
 			 	<img class="constat"  src="/static/planet2.png">
-
 			 </div>
-
      </div>
 
-			<div class="col-12 col-xl-4  d-flex content-card">
+     <!-- second content card -->
 
-				<div class="card">
-          <div class="row">
-            <div class="col-4 d-xl-none">
-              <img src="/static/initiatives_2.png" class="card-img">
+			<div class="col-12 col-xl-4  d-flex ">
+
+				<div class="card h-100 cardsize">
+          <div class="row no-gutters h-100 cardsize">
+            <!-- IMAGE  when horizontal and vertical for small screens -->
+            <div class="col-md-4  d-xl-none d-flex card-header pt-0 pb-0 justify-content-center earthsize" style="overflow:hidden;">
+
+                <img src="/static/initiatives_2.png" class="card-img" style="object-fit:cover;">
+
             </div>
-            <div class="col-8 col-xl-12">
+
+            <!-- TEXTE -->
+            <div class="col-md-8 col-xl-12">
 
 					<div class="card-body">
 						<h5 class="card-title"> Des solutions ? </h5>
@@ -117,13 +257,32 @@
 				</div>
 
 			</div>
+
+
 		</div>
 	</div>
 
+
+
+
+
+
+
+
+<!-- second xl-container -->
+
 	<div class="container-xl ">
 		<div class="row">
+
+
+      <div class="d-none d-xl-block col-xl-3" style="margin-top:30px;">
+       <div class="d-flex my-auto">
+        <img class="constat"  src="/static/tsunami.png">
+       </div>
+      </div>
+<!--
       <div class="d-none d-xl-block col-12 col-xl-3">
-			<div class="d-flex content-card">
+			     <div class="d-flex content-card">
 
         <div class="card border-0 shadow-none ">
 					<div class="card-body" style="text-align: center">
@@ -134,22 +293,37 @@
         </div>
 			</div>
     </div>
+-->
 
-			<div class="col-12 col-xl-6  d-flex content-card">
+			<div class="col-12 col-xl-6  d-flex">
 
 
-				<div class="card">
-					<div class="card-body" style="text-align: center">
-						<h5 class="card-title">Et le consommateur dans tout ca... </h5>
-						<p class="card-text" style="font-size:0.8rem; text-align:left;"> En tant que consommateur, je me sens réguièrement emporté dans un tsunami d’informations où je ne sais plus "par quel bout prendre" la démarche de transition alimentaire. L’énergie et le temps nécessaires requis pour explorer les alternatives existantes découragent et figent encore un peu plus la stratégie monétaire en place. </p>
+				<div class="card h-100 cardsize">
 
-					</div>
+          <div class="row no-gutters h-100 cardsize">
+            <!-- IMAGE  when horizontal and vertical for small screens -->
+            <div class="col-md-4  d-xl-none d-flex card-header pt-0 pb-0 justify-content-center earthsize" style="overflow:hidden;">
+
+                <img src="/static/tsunami.png" class="card-img" style="object-fit:cover;">
+
+            </div>
+
+            <!-- TEXTE -->
+            <div class="col-md-8 col-xl-12">
+
+					         <div class="card-body" id="etleconso">
+						               <h5 class="card-title">Et le consommateur ... </h5>
+						                     <p class="card-text" style="font-size:0.8rem; text-align:left;"> Emporté dans un tsunami d’informations, il est parfois difficle de savoir "par quel bout prendre" la démarche de transition alimentaire. L’énergie et le temps nécessaires requis pour explorer les alternatives existantes découragent et figent encore un peu plus la stratégie monétaire en place. </p>
+
+					          </div>
+            </div>
 				</div>
 
 
 			</div>
+</div>
 
-    <div class="d-none d-xl-block col-12 col-xl-3">
+    <!-- <div class="d-none d-xl-block col-12 col-xl-3">
 			<div class="d-flex content-card">
         <div class="card border-0 shadow-none">
 					<div class="card-body" style="text-align: center">
@@ -157,146 +331,158 @@
           </div>
         </div>
 			</div>
-    </div>
+    </div> -->
+
+    <div class="d-none d-xl-block col-xl-3" style="margin-top:30px;">
+     <div class="d-flex my-auto">
+
+      <img class="constat"  src="/static/initiatives_2.png">
+
+     </div>
+
+   </div>
+
+
+
 
 		</div>
 	</div>
 
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-	<div class="section s3">
-
-	<div class="container pt-5">
-
-			<div class="row gx-4 gx-lg-5 justify-content-left" id="QuiSuisJe">
-				<div class="col">
-					<h2 class="mt-0 ">Et moi dans tout ça...  </h2>
-					<!--<hr class="divider" /> -->
-
-				</div>
-			</div>
-
-	</div>
-
-
-	<div class="container bootstrap snippets bootdeys">
-<div class="row">
-    <div class="col-12 col-md-4  d-flex content-card justify-content-center">
-        <div class="card-big-shadow d-flex flex-fill justify-content-center">
-            <div class="card flex-fill" data-background="color" data-color="lightgreen" data-radius="none">
-                <div class="content">
-
-
-
-					<h4 class="title pb-4" style="text-align:center" ><a href="#" style="color:black;"> Moi, c'est François </a></h4>
-
-					<p class="mb-4" style="text-align:center;"><img style="max-height:100px; max-width:100px" src="/static/image_perso.jpg" id="imgperso"></p>
-
-
-
-					<table class="centerTable">
-
-						<tr>
-							<td class='right-align-class'>Age: </td>
-							<td >&nbsp </td>
-							<td >38 ans</td>
-
-						</tr>
-						<tr>
-							<td class='right-align-class'>Papa: </td>
-							<td >&nbsp </td>
-							<td >Investi</td>
-						</tr>
-						<tr>
-							<td class='right-align-class'> Formation:</td>
-							<td >&nbsp </td>
-							<td >Ingénieur</td>
-						</tr>
-						<tr>
-							<td class='right-align-class'> Nature:</td>
-							<td >&nbsp </td>
-							<td >Hyper-curieux</td>
-						</tr>
-						<tr>
-							<td class='right-align-class'> Consommateur:</td>
-							<td >&nbsp </td>
-							<td >Ex-endormi</td>
-						</tr>
-
-					</table>
-
-
-
-
-
-                </div>
-            </div> <!-- end card -->
-        </div>
-    </div>
-
-    <div class="col-12 col-md-4 d-flex  content-card justify-content-center">
-        <div class="card-big-shadow d-flex flex-fill">
-            <div class="card flex-fill" data-background="color" data-color="green" data-radius="none">
-                <div class="content">
-
-                    <h4 class="title pb-4" style="text-align:center;"><a href="#" style="color:black;">Le cocktail explosif </a></h4>
-
-                     <p class="description pb-3" style="text-align: center; color: black;">Toutes les conditions réunies pour une remise en question ! </p>
-
-
-
-					<p class="cocktail"> <img src="/static/dynamite.png" width="20" class="mb-1"> Un crise sanitaire</p>
-					<p class="cocktail"> <img src="/static/dynamite.png" width="20" class="mb-1"> Des supermarchés "indispensables" avec des files interminables</p>
-					<p class="cocktail"> <img src="/static/dynamite.png" width="20" class="mb-1"> Toute autre source "alternative" d'approvisionnement à l'arrêt</p>
-					<p class="cocktail"> <img src="/static/dynamite.png" width="20" class="mb-1"> Une présentation médiatique partiale </p>
-
-                </div>
-            </div> <!-- end card -->
-        </div>
-    </div>
-
-    <div class="col-12 col-md-4 d-flex content-card justify-content-center">
-        <div class="card-big-shadow d-flex flex-fill">
-            <div class="card flex-fill" data-background="color" data-color="darkgreen" data-radius="none">
-                <div class="content">
-                    <h4 class="title pb-4" style="text-align:center"><a href="#" style="color:black;" >Un premier challenge </a></h4>
-
-                    <p class="description pb-3" style="text-align: center; color: black;">Ne plus mettre un pied dans une grande surface en 2021 ! </p>
-
-					<p class="cocktail"> <img src="/static/ok-icon-3101.png" width="15" class="mb-1"> Découverte d'alternatives </p>
-					<p class="cocktail"> <img src="/static/ok-icon-3101.png" width="15" class="mb-1"> Défier le "pas de temps/pas d'argent" </p>
-					<p class="cocktail"> <img src="/static/ok-icon-3101.png" width="15" class="mb-1"> Manger plus responsable </p>
-
-					<p class="cocktail"> <img src="/static/ok-icon-3111.png" width="15" class="mb-1"> Canaux alternatifs ont souvent peu de visibilité  </p>
-					<p class="cocktail"> <img src="/static/ok-icon-3111.png" width="15" class="mb-1"> Supermarchés ont l'exclusivité de certains produits </p>
-					<p class="cocktail"> <img src="/static/ok-icon-3111.png" width="15" class="mb-1"> Entourage peu motivant dans ma démarche </p>
-
-
-                </div>
-            </div> <!-- end card -->
-        </div>
-    </div>
-
-
-</div>
 </div>
 
-	<p class="pt-5 mt-4" style="font-size:0.9rem; text-align:center; font-style:italic;"> <q> Commence par changer en toi ce que tu veux changer autour de toi.  </q> </p>
+    </div>
 
 
-	</div> <!--end s1b -->
+
+
+
+
+
+    <div class="section s3 fp-auto-height-responsive">
+
+      <div class="container-xl mb-0 mb-xl-4">
+
+    			<div class="row gx-4 gx-lg-5 justify-content-start" id="QuiSuisJe">
+    				<div class="col">
+    					<h2 class="pb-4 mt-xl-5 text-center text-md-left" > <span id="underlinetitle" >Et moi dans tout ça ...  </span>  </h2>
+
+
+    				</div>
+    			</div>
+
+    	</div>
+
+
+
+
+    <!-- title -->
+
+    <div class="container-xl ">
+      <div class="card-deck">
+      <div class="row">
+        <div class="col-4 h-100">
+          <div class="card profile-card-3 h-100">
+    		        <div class="background-block">
+    		            <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background"/>
+    		        </div>
+    		        <div class="profile-thumb-block">
+    		            <img src="/static/image_perso.jpg" alt="profile-image" class="profile"/>
+    		        </div>
+    		        <div class="card-content" style="margin-top:30px;">
+                    <h2 class="pb-3">Moi C'est François</h2>
+                    <h3 class="pb-3" style="font-size:1.2rem;">  38 ans, papa investi, ingénieur de formation, de nature hyper-curieuse... ex-consommateur endormi.</h3>
+
+                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+          </div>
+
+        </div>
+        <div class="col-8">
+          <div class="row">
+              <div class="col-12 pb-5">
+                <div class="card" style="border:none; box-shadow:none;">
+                  <div class="row">
+                    <!-- IMAGE  when horizontal and vertical for small screens -->
+                    <div class="col-4 card-header" style="background-color:white; border-bottom:none;">
+
+                        <img src="/static/dynamite.png" class="card-img" style="width:100%; height:100%;object-fit:contain;">
+
+                    </div>
+
+                    <!-- TEXTE -->
+                    <div class="col-8  ">
+        					         <div class="card-body">
+        						               <h5 class="card-title"> Le cocktail explosif </h5>
+                                   <ul style="padding-left:15px;">
+                                     <li>Un crise sanitaire</li>
+                                     <li>Des supermarchés "indispensables" avec des files interminables</li>
+                                     <li>Toute autre source "alternative" d'approvisionnement à l'arrêt</li>
+                                     <li>Une présentation médiatique partiale</li>
+                                   </ul>
+
+        						                <p class="card-text"> Toutes les conditions sont réunies pour une remise en question ! </p>
+
+        					         </div>
+                     </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card" style="border:none; box-shadow:none;">
+                <div class="row">
+
+
+
+                  <!-- TEXTE -->
+                  <div class="col-8  ">
+                         <div class="card-body">
+                                 <h5 class="card-title"> Un premier challenge </h5>
+
+                                 <p class="card-text">   Ne plus mettre un pied dans une grande surface en 2021 ! </p>
+
+                                 <ul style="padding-left:15px;">
+                                   <li>Découverte d'alternatives</li>
+                                   <li>Défier le "pas de temps/pas d'argent"</li>
+                                   <li>Manger plus responsable</li>
+                                   <li style="color:red;">Canaux alternatifs ont souvent peu de visibilité</li>
+                                   <li style="color:red;">Supermarchés ont l'exclusivité de certains produits</li>
+                                   <li style="color:red;">Entourage peu motivant dans ma démarche</li>
+                                 </ul>
+
+
+
+                         </div>
+                   </div>
+
+                   <!-- IMAGE  when horizontal and vertical for small screens -->
+                   <div class="col-4 card-header" style="background-color:white; border-bottom:none;">
+
+                       <img src="/static/idea1.jpg" class="card-img" style=" height:100%; width:100%; object-fit:cover;">
+
+                   </div>
+
+                </div>
+              </div>
+              </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <p class="pt-5 mt-4" style="font-size:0.9rem; text-align:center; font-style:italic;"> <q> Commence par changer en toi ce que tu veux changer autour de toi.  </q> </p>
+
+
+
+  </div>
+
+
+
+
 
 
 
@@ -309,72 +495,118 @@
       <div class="section s4">
 
 
-		<div class="container pt-5">
 
-			<div class="row gx-4 gx-lg-5 justify-content-left" id="QuiSuisJe">
-				<div class="col">
-					<h2 class="mt-0 ">Et pourquoi pas officialiser ce réseau ?   </h2>
-					<!--<hr class="divider" /> -->
+        <div class="container-xl mb-0 mb-xl-4">
 
-				</div>
-			</div>
-
-			<p style="font-size:0.8rem;"> Je souhaiterais créer un média structuré où l’on pourrait fédérer ces idées et ces solutions existantes d’alternatives plus durables, bio, écologiques, et saines. Les dimensions budgétaires et temporelles restent bien sûr des variables pertinentes mais la dimension géographique l’est tout autant : et si ton voisin avait déjà une solution parfaite pour t'éviter la visite hebdomadaire du supermarché, tout en faisant découvrir de nouveaux produits locaux et bios, en t'épargnant du temps et de l'argent ?  </p>
+      			<div class="row gx-4 gx-lg-5 justify-content-start" id="QuiSuisJe">
+      				<div class="col">
+      					<h2 class="pb-4 mt-xl-5 text-center text-md-left" > <span id="underlinetitle" >Et pourquoi pas  <br class="d-md-none"/> officialiser ce réseau ? </span>  </h2>
+      					<!--  <hr class="divider py-1 bg-dark" /> -->
+                <p style="font-size:0.8rem;"> Je souhaiterais créer un média structuré où l’on pourrait fédérer ces idées et ces solutions existantes d’alternatives plus durables, bio, écologiques, et saines... que ce soit en termes de produits, de lieux d'achats, de techniques de cuisine, ou encore de logistique de transport,... </p>
+                <p style="font-size:0.8rem;"> L'accent porterait bien sûr sur les aspects "argent et temps" mais en intégrant la dimension géographique: et si ton voisin avait déjà une solution parfaite pour t'éviter la visite hebdomadaire du supermarché, tout en te faisant découvrir de nouveaux produits locaux et bios, en t'épargnant du temps et de l'argent ?  </p>
 
 
+      				</div>
+      			</div>
 
-			<div class="container ">
+      	</div>
+
+
+
+
+
+		<div class="container-xl ">
 		<div class="row">
-			<div class="col-12 col-md-4  d-flex content-card">
 
-				<div class="card">
-					<div class="card-header">
-						<img style="width: 100%;" src="/static/farm.PNG">
-					</div>
-					<div class="card-body">
-						<h5 class="card-title">Un consomm-acteur </h5>
-						<p class="card-text" style="font-size:0.8rem;">Le consommateur partage avec son réseau ses informations sur sa transition alimentaire.  </p>
+        <!-- 1ST CARD -->
+        <div class="col-12 col-xl-4 mb-3 mb-xl-0">
 
-					</div>
-				</div>
 
-			</div>
+				          <div class="card customcardsize">
+                    <div class="row">
+                    <!--<img class="card-img-top" style="height:150px;" src="/static/consommacteur.PNG">-->
+                    <div class="col-12 col-md-4 col-xl-12">
+					               <div class="card-header pb-0 pt-0 pl-0 pr-0 customimagecardsize"  >
+						                     <img style="width:100%; height:100%;object-fit:cover;" class="customimagecardsize" src="/static/consoalt.jpg">
+					               </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-xl-12">
+					                               <div class="card-body">
+						                                     <h5 class="card-title" style="font-size:1rem; font-weight:bold;">Un consomm-acteur </h5>
+						                                     <p class="card-text" style="font-size:0.8rem;">Le consomm-acteur partage avec son réseau ses informations sur sa transition alimentaire.  </p>
 
-			<div class="col-12 col-md-4  d-flex content-card">
+					                               </div>
+				         </div>
 
-				<div class="card">
-					<div class="card-header">
-						<img style="width: 100%;" src="/static/db.png">
-					</div>
-					<div class="card-body">
-						<h5 class="card-title">Un média central </h5>
-						<p class="card-text" style="font-size:0.8rem;">L'information partagée entre consomm-acteurs et acteurs du secteur alimentaire est partagée. Une interaction permet aux consommateurs d'exprimer leur point de vue, et au secteur alimentaire d'informer et de s'adapter plus facilement.  </p>
+			      </div>
+        </div>
+      </div>
 
-					</div>
-				</div>
 
-			</div>
 
-			<div class="col-12 col-md-4  d-flex content-card">
+        <!-- 2ND CARD -->
 
-				<div class="card">
-					<div class="card-header">
-						<img style="width: 100%;" src="/static/farm.png">
-					</div>
-					<div class="card-body">
-						<h5 class="card-title">Un producteur connecté </h5>
-						<p class="card-text" style="font-size:0.8rem;">Le producteur ou acteur du secteur alimentaire est connecté avec son réseau. Il peut plus facilement recevoir un retour de ses consommateurs et adapter sa production en réponse aux demandes du consomm-acteur.   </p>
 
-					</div>
-				</div>
+        <div class="col-12 col-xl-4 mb-3 mb-xl-0">
 
-			</div>
+
+                  <div class="card customcardsize">
+                    <div class="row">
+                    <!--<img class="card-img-top" style="height:150px;" src="/static/consommacteur.PNG">-->
+                    <div class="col-12 col-md-4 col-xl-12">
+                         <div class="card-header pb-0 pt-0 pl-0 pr-0 customimagecardsize"  >
+                                 <img style="width:100%; height:100%;object-fit:cover;" class="customimagecardsize" src="/static/dbalt.jpg">
+                         </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-xl-12">
+                                         <div class="card-body">
+                                           <h5 class="card-title" style="font-size:1rem; font-weight:bold;">Un média central </h5>
+                                          <p class="card-text" style="font-size:0.8rem;">L'information partagée entre consomm-acteurs et producteurs est disponible et accessible à tous.  Une possibilité d'interaction permet aux consommateurs et aux acteurs du secteur alimentaire de se challenger mutuellement.</p>
+
+                                         </div>
+                 </div>
+
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+        <!-- 3RD CARD -->
+
+        <div class="col-12 col-xl-4 mb-3 mb-xl-0">
+
+
+                  <div class="card customcardsize">
+                    <div class="row">
+                    <!--<img class="card-img-top" style="height:150px;" src="/static/consommacteur.PNG">-->
+                    <div class="col-12 col-md-4 col-xl-12">
+                         <div class="card-header pb-0 pt-0 pl-0 pr-0 customimagecardsize"  >
+                                 <img style="width:100%; height:100%;object-fit:cover;" class="customimagecardsize" src="/static/farmalt.jpg">
+                         </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-xl-12">
+                                         <div class="card-body">
+                                           <h5 class="card-title" style="font-size:1rem; font-weight:bold;">Un producteur connecté </h5>
+                                           <p class="card-text" style="font-size:0.8rem;">Le producteur est connecté avec son réseau. Il peut plus facilement recevoir une appréciation de ses consommateurs et/ou adapter sa production en réponse aux demandes du consomm-acteur.   </p>
+
+                                         </div>
+                 </div>
+
+            </div>
+        </div>
+      </div>
+
+
+
+
 
 		</div>
-	</div>
+</div>
 
-
-	</div>
 
 
 
@@ -383,138 +615,129 @@
       </div>
 
 
+
+
+
+
+
+
+
+
+
 <!-- formulaire -->
 
       <div class="section s5">
 
-	<div class="container pt-5" >
-	<div class="row gx-4 gx-lg-5 justify-content-center" id="ContactT">
-		<div class="col">
-			<h2 class="mt-0 text-align-left">Vas-y .. Lance-toi ! </h2>
-			<hr class="divider" />
-		</div>
-	</div>
-</div>
+        <div class="container-xl mb-0 mb-xl-4">
 
-<div class="container pt-3" >
-	<div class="row gx-4 gx-lg-5" id="ContactContent">
-		<div class="col">
-				<p class="text-muted mb-5 text-align-left">    Parce que l’idée est de nature collaborative, j’ai créé ce questionnaire, et un formulaire de contact, afin de récolter un maximum d’informations sur votre réalité à vous, vos attentes, vos envies, vos possibles (ébauches de) projets en cours, vos remarques, vos propositions… afin de proposer une solution qui rassemblerait le plus grand nombre de gens.
+            <div class="row gx-4 gx-lg-5 justify-content-start" id="ContactT">
+              <div class="col">
+                <h2 class="pb-4 mt-xl-5 text-center text-md-left" > <span id="underlinetitle" >Vas-y.... &Agrave toi de jouer !  </span>  </h2>
 
-Ce projet pilote est lancé uniquement sur la commune d’Auderghem, où je vis, pour se focaliser sur la réalité d'une localisation géographique spécifique, mais l'idée n'est pas de restreindre à cette seule localisation.
+                <p class="mb-5 text-align-left" style="font-size:0.8rem;"> Parce que l’idée est de nature collaborative, j’ai créé ce questionnaire et un formulaire de contact afin de récolter un maximum d’informations sur votre réalité à vous, vos attentes, vos envies, vos possibles (ébauches de) projets en cours, vos remarques, vos propositions… afin de proposer une solution qui rassemblerait le plus grand nombre de gens.</p>
+                <p class="mb-5 text-align-left" style="font-size:0.8rem;"> Que vous soyez acteur dans le secteur alimentaire (producteur, fournisseur, …) ou consommateur soucieux ou intéressé, envie de proposer une idée, une envie, une remarque, une vérité, une info ? Ou simplement de poser une question... Tout m'intéresse !  </p>
+              </div>
+            </div>
 
-Que vous soyez acteur dans le secteur alimentaire (producteur, fournisseur, …) ou consommateur soucieux ou intéressé, votre avis m’intéresse ! Alors, n’hésitez plus ! Envoiez tout ce que vous avez !  </p>
+        </div>
 
-				<p class="text-muted mb-5 text-align-left">Envie de proposer une idée, une envie, une remarque, une vérité, une info ? Ou simplement de poser une question... Tout m'intéresse ! </p>
-			</div>
-		</div>
-</div>
 
 
 
 <!-- Formulaire de Contact -->
 
-<div class="container">
+<div class="container-xl">
 
-<div class="row mx-3">
+  <div class="row mx-3">
 
- <div class="col-md-10 mx-auto pt-4 pb-5 mb-5" id="contactFormFinal">
 
-	<form class="" method="post">
+   <!--  left part -->
+    <div class="col-md-4 mx-auto pt-4 pb-5 mb-5">
 
-		<div class="row">
+
+      		   <p class="pl-xl-5 " style="font-size:0.8rem;"> Envie de te positionner ? Réponds vite à ce petit questionnaire ...</p>
+
+      		    <br>
+
+      		  <!-- Button -->
+      		 <div class="alignbutton mb-5 pl-xl-5">
+      			   <a href="https://www.survio.com/survey/d/F1J6G9N8A9J9K6A6L" target="_blank" style="display:inline-block;text-decoration:none;text-align:left;background-color:#1dad82;color:#ffffff;font-family:Arial, Helvetica, sans-serif;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:11px 25px;font-size:14px;line-height:180%;font-weight: bold;letter-spacing: 0.5px">Démarrez le questionnaire !</a>
+         </div>
+
+    </div>
+
+    <div class="col-md-4 offset-md-2 mx-auto pt-4 pb-5 mb-5" id="contactFormFinal">
+
+	     <form class="" method="post">
+
+		     <div class="row">
 				{{form.hidden_tag()}}
 
-				{{form.name.label(class="col-11 offset-2 col-md-4 offset-md-0 d-flex justify-content-md-end")}}
-				<div class="col-11 offset-2 col-md-8 offset-md-0 mb-4 pb-3">
-					{{form.name(class="inputunderline pb-3", placeholder="Jean Dupont")}}
+				{{form.name.label(class="col-10 offset-2 col-md-5 offset-md-0 d-flex justify-content-md-end")}}
+				<div class="col-10 offset-2 col-md-7 offset-md-0 mb-4 pb-3">
+					{{form.name(class="inputunderline pb-2", placeholder="Jean Dupont")}}
 				</div>
 
-			</div>
+			  </div>
 
-		<div class="row">
+		    <div class="row">
 				{{form.hidden_tag()}}
 
-				{{form.adresseMail.label(class="col-11 offset-2 col-md-4 offset-md-0 d-flex justify-content-md-end")}}
-				<div class="col-11 offset-2 col-md-8 offset-md-0 mb-4 pb-3">
-					{{form.adresseMail(class="inputunderline pb-3", placeholder="nom@exemple.com")}}
+				{{form.adresseMail.label(class="col-10 offset-2 col-md-5 offset-md-0 d-flex justify-content-md-end")}}
+				<div class="col-10 offset-2 col-md-7 offset-md-0 mb-4 pb-3">
+					{{form.adresseMail(class="inputunderline pb-2", placeholder="nom@exemple.com")}}
 				</div>
 
-			</div>
+			  </div>
 
-			<div class="row">
+			  <div class="row">
 					{{form.hidden_tag()}}
 
-					{{form.codePost.label(class="col-11 offset-2 col-md-4 offset-md-0 d-flex justify-content-md-end")}}
-					<div class="col-11 offset-2 col-md-8 offset-md-0 mb-4 pb-3">
-						{{form.codePost(class="inputunderline pb-3", placeholder="nom@exemple.com")}}
+					{{form.codePost.label(class="col-10 offset-2 col-md-5 offset-md-0 d-flex justify-content-md-end")}}
+					<div class="col-10 offset-2 col-md-7 offset-md-0 mb-4 pb-3">
+						{{form.codePost(class="inputunderline pb-2", placeholder="nom@exemple.com")}}
 					</div>
 
-				</div>
+				 </div>
 
-				<div class="row">
+				 <div class="row">
 						{{form.hidden_tag()}}
 
-						{{form.textMess.label(class="col-11 offset-2 col-md-4 offset-md-0 d-flex justify-content-md-end")}}
-						<div class="col-11 offset-2 col-md-8 offset-md-0 mb-4 pb-3">
-							{{form.textMess(class="inputunderline pb-3", placeholder="Ecris-moi ton message ici")}}
+						{{form.textMess.label(class="col-10 offset-2 col-md-5 offset-md-0 d-flex justify-content-md-end")}}
+						<div class="col-10 offset-2 col-md-7 offset-md-0 mb-4 pb-3">
+							{{form.textMess(class="inputunderline pb-2", placeholder="Ecris-moi ton message ici")}}
 						</div>
 
-					</div>
+					 </div>
 
-				<div class="row">
-					<div class="col-4 offset-2 col-md-4 offset-md-4 pb-4 ">
+				  <div class="row">
+					 <div class="col-4 offset-2 col-md-4 offset-md-4 pb-4 ">
 						{{form.submit(class="contact100-form-btn")}}
-					</div>
-				</div>
+					 </div>
+				  </div>
+	     </form>
 
-	</form>
-</div>
-</div>
-
-</div>
-	</div>
+    </div>
 
 
-
-<div class="section s6">
-
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
-
-  <div class="card card-custom">
-     <div class="card-avatar">
-        <img src="/static/image_perso_bw_transparent_2.png">
-     </div>
-     <div class="card-details">
-        <div class="name">François</div>
-        <div class="occupation">Prénom</div>
-
-        <div class="card-about">
-           <div class="item">
-              <span class="value">38</span>
-              <span class="label">Age</span>
-           </div>
-           <div class="item">
-              <span class="value">Attentif </span>
-              <span class="label">Papa</span>
-           </div>
-           <div class="item">
-              <span class="value">Hyper Curieux</span>
-              <span class="label">Trait</span>
-           </div>
-        </div>
-        <div class="skills">
-           <span class="value">Ingénieur de formation, ex-consommateur endormi.</span>
-        </div>
-     </div>
   </div>
 
-</div>
+  </div>
 
 
 
 
-      <div class="section s5 fp-auto-height">
+</div> <!-- end section 5 -->
+
+
+
+
+
+
+
+<!-- footer -->
+
+<div class="section s6 fp-auto-height">
 
 
 		<footer class="bg-light text-center text-lg-start">
@@ -542,8 +765,10 @@ Que vous soyez acteur dans le secteur alimentaire (producteur, fournisseur, …)
 
      new fullpage('#fullpage', {
 
-   		responsiveHeight: 740,
-   		responsiveWidth: 992
+   		responsiveHeight: 815,
+   		responsiveWidth: 992,
+      anchors:['Accueil', 'Intro', 'MonParcours', 'LeProjet', 'Contact'],
+      sectionsColor: ['#f2f2f2', '#eef2ed', '#ffffff', 'whitesmoke', '#eef2ed'],
 		});
 
 

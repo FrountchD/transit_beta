@@ -10,7 +10,7 @@ from azure.identity import DefaultAzureCredential
 
 credential =  DefaultAzureCredential()
 keyVaultName = os.environ["KEY_VAULT_NAME"]
-client     =  SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
+client     = SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
 
 
 app = Flask(__name__)
