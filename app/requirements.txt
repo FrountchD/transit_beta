@@ -1,5 +1,6 @@
 flask
 flask_mail
 flask_wtf
+wtforms
 azure-identity
 azure-keyvault-secrets
