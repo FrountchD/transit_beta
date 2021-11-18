@@ -6,11 +6,16 @@ html{
 /* SECTION S1 */
 
 .s1{
-	background:url('imagefond3-resized.jpg');
+
 	background-size: cover;
 	background-position:center top;
 	min-height: 600px;
 
+}
+
+#section1{
+	background:url('imagefond3-resized.jpg');
+	background-size:cover;
 }
 
 .s1::before{
@@ -22,6 +27,7 @@ html{
 	bottom:0px;
 	left:0px;
 	background-color:rgba(0,0,0,0.35);
+	background-position: center top;
 
 }
 
@@ -334,6 +340,10 @@ html{
     z-index: -1;
     transform: rotate(-13deg);
 }
+
+.card-deck{
+	margin:0 !important; 
+}
 .profile-card-3 .profile {
   border-radius: 50%;
   position: absolute;
@@ -608,7 +618,7 @@ a:hover, a:focus {
 	width: 400px;
 }
 
-#contactFormFinal p, label, button, input, textarea{
+#contactFormFinal p, #contactFormFinal label, #contactFormFinal button, #contactFormFinal input, #contactFormFinal textarea{
 	font-size:0.8rem;
 	background-color: lightgray;
 	display: block;
@@ -639,7 +649,7 @@ body {
    margin: 0;
    display: grid;
    place-items: center;
-   padding: 1rem;
+
    background: var(--background);
    font-family: 'Source Code Pro', monospace;
 
