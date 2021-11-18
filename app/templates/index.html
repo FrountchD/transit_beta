@@ -788,7 +788,7 @@
 
         $(document).bind('gesturechange',function(event){
 
-            if(event.originalEvent.scale > 1) scale = scale < 1.2 ?  scale+r : 1.2 ;
+            if(event.originalEvent.scale > 1) scale = scale < 1.2 ?  scale : 1.2 ;
             else  scale : 1 ;
 
             $('meta[name=viewport]').attr('content', 'width=device-width, minimum-scale='+ scale.toFixed(2) +', maximum-scale='+ scale.toFixed(2) +', user-scalable=yes'); //
