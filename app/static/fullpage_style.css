@@ -33,11 +33,23 @@ html{
 
 
 .s1 h1{
-	font-size: 2.2rem ;
+	font-size: 1.6rem ;
+	line-height: 1.5;
 	font-weight: bold;
 	color: white;
 	text-align: center;
 	font-family: Verdana, sans-serif;
+}
+
+@media (min-width:576px) {
+	.s1 h1{
+		font-size: 1.8rem;
+	}
+}
+@media (min-width:768px) {
+	.s1 h1{
+		font-size: 2.2rem;
+	}
 }
 
 .s1 p{
@@ -252,6 +264,8 @@ html{
 
 	font-size: 1.5rem;
 }
+
+
 
 @media (min-width:992px) {
 	.s2 h2, .s3 h2, .s4 h2, .s5 h2{
