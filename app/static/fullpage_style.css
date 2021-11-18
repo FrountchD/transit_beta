@@ -248,19 +248,19 @@ html{
 */
 
 
-.s2 h2{
+.s2 h2, .s3 h2, .s4 h2, .s5 h2{
 
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 
 @media (min-width:992px) {
-	.s2 h2{
+	.s2 h2, .s3 h2, .s4 h2, .s5 h2{
 		font-size: 1.6rem;
 	}
 }
 
 @media (min-width:1200px) {
-	.s2 h2{
+	.s2 h2, .s3 h2, .s4 h2, .s5 h2{
 		font-size: 1.8rem;
 	}
 }
@@ -342,7 +342,7 @@ html{
 }
 
 .card-deck{
-	margin:0 !important; 
+	margin:0 !important;
 }
 .profile-card-3 .profile {
   border-radius: 50%;

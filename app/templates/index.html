@@ -268,7 +268,7 @@
 
       <div class="d-none d-xl-block col-xl-3" style="margin-top:30px;">
        <div class="d-flex my-auto">
-        <img class="constat"  src="/static/tsunami.png">
+        <img class="constat"  src="/static/tsunami.PNG">
        </div>
       </div>
 <!--
@@ -295,7 +295,7 @@
             <!-- IMAGE  when horizontal and vertical for small screens -->
             <div class="col-md-4  d-xl-none d-flex card-header pt-0 pb-0 justify-content-center earthsize" style="overflow:hidden;">
 
-                <img src="/static/tsunami.png" class="card-img" style="object-fit:cover;">
+                <img src="/static/tsunami.PNG" class="card-img" style="object-fit:cover;">
 
             </div>
 
@@ -780,7 +780,7 @@
 
     <!-- pinch zooming on iphone -->
 
-    
+
     $(document).ready(function() {
 
         var scale = 0.7; // initial-scale
@@ -789,7 +789,7 @@
         $(document).bind('gesturechange',function(event){
 
             if(event.originalEvent.scale > 1) scale = scale < 1.2 ?  scale+r : 1.2 ;
-            else scale = scale > 0.7 ? scale-r : 0.7 ;
+            /*else scale = scale > 0.7 ? scale-r : 0.7 ; */
 
             $('meta[name=viewport]').attr('content', 'width=device-width, minimum-scale='+ scale.toFixed(2) +', maximum-scale='+ scale.toFixed(2) +', user-scalable=yes'); //
 
