@@ -396,9 +396,26 @@ html{
 
 
 
+#dynamitebcg{
+	background: url('dynamite.png') no-repeat center top;
+	opacity:50%;
+	background-size:70%;
+}
+@media (min-width:768px){
+	#dynamitebcg{
+		background:none;
+	}
+}
 
-
-
+#ideabcg{
+	background: url('idea1.jpg') no-repeat center top;
+	opacity:50%;
+}
+@media (min-width:768px){
+	#ideabcg{
+		background:none;
+	}
+}
 
 
 
