@@ -783,13 +783,13 @@
 
     $(document).ready(function() {
 
-        var scale = 0.7; // initial-scale
+        var scale = 1; // initial-scale
         var r = 0.10;
 
         $(document).bind('gesturechange',function(event){
 
             if(event.originalEvent.scale > 1) scale = scale < 1.2 ?  scale+r : 1.2 ;
-            /*else scale = scale > 0.7 ? scale-r : 0.7 ; */
+            else scale = scale > 0.7 ? scale-r : 1 ;
 
             $('meta[name=viewport]').attr('content', 'width=device-width, minimum-scale='+ scale.toFixed(2) +', maximum-scale='+ scale.toFixed(2) +', user-scalable=yes'); //
 
