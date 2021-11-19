@@ -18,6 +18,8 @@ html{
 	background-size:cover;
 }
 
+
+
 .s1::before{
 	content: "";
 	position: absolute;
@@ -38,7 +40,7 @@ html{
 	font-weight: bold;
 	color: white;
 	text-align: center;
-	font-family: Verdana, sans-serif;
+	font-family: 'Source Code Pro', monospace;
 }
 
 @media (min-width:576px) {
@@ -63,7 +65,7 @@ html{
 
 	color: white;
 
-	font-family: Verdana, sans-serif;
+	font-family: 'Source Code Pro', monospace;
 }
 
 
@@ -104,7 +106,7 @@ html{
 }
 
 .customimagecardsize{
-	height:300px;
+	height:150px;
 }
 
 @media (min-width:768px) {
@@ -129,11 +131,11 @@ html{
 	}
 
 	.customcardsize{
-		height:200px;
+		height:150px;
 	}
 
 	.customimagecardsize{
-		height:200px;
+		height:150px;
 	}
 }
 
@@ -165,11 +167,11 @@ html{
 	}
 
 	.customcardsize{
-		height:200px;
+		height:150px;
 	}
 
 	.customimagecardsize{
-		height:200px;
+		height:150px;
 	}
 
 }
@@ -231,7 +233,7 @@ html{
 */
 
 .card-text{
-	font-size:0.8rem;
+	font-size:0.9rem;
 }
 
 
@@ -280,8 +282,7 @@ html{
 }
 
 
-.s2 h1, .s2 h2{
-
+.s2 h1, .s2 h2, .s3 h2, .s4 h2{
 
 	margin-top: 4rem;
 
@@ -308,7 +309,7 @@ html{
 
 
 .profile-card-3 {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Source Code Pro', monospace;/*font-family: 'Open Sans', Arial, sans-serif;*/
   position: relative;
   float: left;
   overflow: hidden;
@@ -316,13 +317,36 @@ html{
   text-align: center;
   height:368px;
   border:none;
+	border-shadow:none;
 }
+
+@media (min-width:992px){
+
+	.profile-card-3 {
+			border-shadow:0 2px 2px rgba(204, 197, 185, 0.5);
+	}
+
+}
+
+
 .profile-card-3 .background-block {
     float: left;
     width: 100%;
-    height: 300px;
+    height: 200px;
     overflow: hidden;
 }
+
+@media (min-width:992px){
+
+	.profile-card-3 .background-block {
+	    height: 300px;
+	}
+
+
+}
+
+
+
 .profile-card-3 .background-block .background {
   width:100%;
   vertical-align: top;
@@ -334,26 +358,47 @@ html{
 }
 .profile-card-3 .card-content {
   width: 100%;
-  padding: 15px 25px;
+
+	padding-top: 100px;
+	padding-right: 15px;
+	padding-left:15px;
+	padding-bottom:25px;
   color:#232323;
   float:left;
   background:#efefef;
-  height:50%;
+  height:300px;
   border-radius:0 0 5px 5px;
   position: relative;
   z-index: 9999;
+
 }
+
+
 .profile-card-3 .card-content::before {
-    content: '';
-    background: #efefef;
-    width: 220%;
-    height: 180%;
-    left: -40px;
-    top: -160px;
-    position: absolute;
-    z-index: -1;
-    transform: rotate(-13deg);
+
 }
+
+
+@media (min-width:992px){
+	.profile-card-3 .card-content{
+		margin-top: 3Opx ;
+		height:50%;
+		padding: 15px 25px;
+	}
+	.profile-card-3 .card-content::before {
+	    content: '';
+	    background: #efefef;
+	    width: 220%;
+	    height: 180%;
+	    left: -40px;
+	    top: -160px;
+	    position: absolute;
+	    z-index: -1;
+	    transform: rotate(-13deg);
+	}
+
+}
+
 
 .card-deck{
 	margin:0 !important;
@@ -361,9 +406,9 @@ html{
 .profile-card-3 .profile {
   border-radius: 50%;
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 50%;
-  max-width: 180px;
+  max-width: 200px;
   opacity: 1;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(255, 255, 255, 1);
@@ -371,10 +416,21 @@ html{
   transform: translate(-50%, 0%);
   z-index:99999;
 }
+
+@media (min-width:992px){
+	.profile-card-3 .profile {
+
+		top: 15%;
+		  max-width: 180px;
+ }
+
+}
+
+
 .profile-card-3 h2 {
   margin: 0 0 5px;
   font-weight: 600;
-  font-size:25px;
+  font-size:1.45rem;
 }
 .profile-card-3 h2 small {
   display: block;
@@ -408,31 +464,99 @@ html{
 }
 
 
+.card-deck .card{
+	margin: 0px !important;
+}
+
 
 
 #dynamitebcg{
 	background: url('dynamite.png') no-repeat center top;
-	opacity:50%;
 	background-size:70%;
 }
+
 @media (min-width:768px){
 	#dynamitebcg{
 		background:none;
 	}
 }
 
-#ideabcg{
-	background: url('idea1.jpg') no-repeat center top;
-	opacity:50%;
+#dynamitebcg::before{
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background-color:rgba(255,255,255,0.5);
+	background-position: center top;
 }
+
+
+.h-lg-100{
+	height:500px !important;
+	padding-bottom:30px;
+}
+
+.posrel-md{
+	position: relative;
+	padding-bottom:15px;
+}
+
+.h3-custom{
+	font-size:1.2rem;
+}
+
+@media (min-width:768px){
+	.posrel-md{
+		position: inline-block;
+		padding-bottom:0px;
+	}
+
+}
+
+@media (min-width:992px){
+	.h3-custom{
+		font-size: 0.9rem;
+	}
+
+}
+
+
+
+@media (min-width:992px){
+	.h-lg-100{
+		height:100% !important;
+		padding-bottom:0px;
+	}
+}
+
+
+
+
+#ideabcg{
+	background: url('idea1.jpg') no-repeat center bottom;
+	background-size:120%;
+}
+
 @media (min-width:768px){
 	#ideabcg{
 		background:none;
 	}
 }
 
-
-
+#ideabcg::before{
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background-color:rgba(255,255,255,0.7);
+	background-position: center bottom;
+}
 
 
 
@@ -463,7 +587,7 @@ ul li {
 
   padding-left: 20px;
   position: relative;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #60773d;
 }
 
@@ -471,7 +595,7 @@ ul li {
 
 	font-size:0.6rem;
 	color:black;
-	margin-bottome:0.2rem;
+	margin-bottom:0.2rem;
 	font-family : Montserrat, sans-serif;
 
 }
@@ -650,7 +774,7 @@ a:hover, a:focus {
 }
 
 #contactFormFinal p, #contactFormFinal label, #contactFormFinal button, #contactFormFinal input, #contactFormFinal textarea{
-	font-size:0.8rem;
+	font-size:0.9rem;
 	background-color: lightgray;
 	display: block;
 	width: 100%;
