@@ -588,7 +588,7 @@ ul li {
   padding-left: 20px;
   position: relative;
   font-size: 0.9rem;
-  color: #60773d;
+
 }
 
 .cocktail{
@@ -782,8 +782,30 @@ a:hover, a:focus {
 }
 
 
+.FormDesign0{
+	width:80%;
+	border-radius:12px;
+	box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
 
+}
 
+.FormDesign{
+	background-color:#f1f6f9;
+	width:360px;
+	border-radius:12px;
+	box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+
+}
+
+#contactForm2 p, #contactForm2 label, #contactForm2 button, #contactForm2 input, #contactForm2 textarea{
+	font-size:0.9rem;
+	display:block;
+}
+
+#contactForm2 input, #contactForm2 textarea{
+	width:320px;
+	background:transparent;
+}
 
 
 * {

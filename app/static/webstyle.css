@@ -169,13 +169,15 @@ input:focus {
 
 
 #modalId li, #modalId p{
-	font-family: "Verdana", sans-serif; # Poppins-Regular;
-  font-size: 15px;
-  color: #808080;
-  line-height: 1.2;
-  text-align: center;
+	font-family: 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+  color: black;
+  line-height: 0.6;
+  text-align: left;
 	padding-top:10px;
 	padding-bottom:10px;
+	padding-left:10px;
+
 
 
 }
@@ -423,14 +425,15 @@ textarea.input100 {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  min-width: 160px;
-  height: 50px;
-  background-color: #57b846;
-  border-radius: 25px;
+  /*min-width: 160px;*/
+  height: 40px;
 
-  font-family: "Verdana", sans-serif; #Poppins-Regular;
+  background-color: #C8DDA3 !important; /* #57b846;*/
+  /*border-radius: 25px;*/
+  font-family: 'Source Code Pro', monospace;
+  /*font-family: "Verdana", sans-serif; #Poppins-Regular;*/
   font-size: 16px;
-  color: #fff;
+  color: black; /*#fff;*/
   line-height: 1.2;
 
   -webkit-transition: all 0.4s;
