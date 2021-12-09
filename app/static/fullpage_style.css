@@ -1,3 +1,12 @@
+@import url(//db.onlinewebfonts.com/c/d09c32f6114a7e885d322df6774281f8?family=BreeW01-Semibold);
+@import url(//db.onlinewebfonts.com/c/927699cb752d1b76650593a4ad6710b8?family=Basic+Sans+Regular);
+
+@font-face {font-family: "BreeW01-Semibold"; src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot"); src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff") format("woff"), url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.svg#BreeW01-Semibold") format("svg"); }
+
+@font-face {font-family: "Basic Sans Regular"; src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.eot"); src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff") format("woff"), url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.svg#Basic Sans Regular") format("svg"); }
+
+
+
 html{
 	-webkit-text-size-adjust:100%;
 }
@@ -14,8 +23,9 @@ html{
 }
 
 #section1{
-	background:url('imagefond3-resized.jpg');
+	background:url('imagefond_alt_2.jpg');
 	background-size:cover;
+	background-position: right, bottom;
 }
 
 
@@ -40,7 +50,7 @@ html{
 	font-weight: bold;
 	color: white;
 	text-align: center;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'BreeW01-Semibold','Source Code Pro', monospace;
 }
 
 @media (min-width:576px) {
@@ -65,7 +75,7 @@ html{
 
 	color: white;
 
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Basic Sans Regular', 'Source Code Pro', monospace;
 }
 
 
@@ -77,7 +87,7 @@ html{
 
 
 .menu-size{
-	font-size:0.9rem !important;
+	font-size:1.0rem !important;
 }
 
 
@@ -95,10 +105,11 @@ html{
 
 #underlinetitle{
 	text-align:center;
-	border-bottom: 6px solid #C8DDA3;
+	/*border-bottom: 6px solid #C8DDA3;*/
 	padding-bottom:8px;
-	padding-left:15px;
+
   line-height:2;
+	color:rgb(95,129,82);
 }
 
 .customcardsize{
@@ -124,9 +135,9 @@ html{
 
 	#underlinetitle{
 		text-align:left;
-		border-bottom: 6px solid #C8DDA3;
+		/*border-bottom: 6px solid #C8DDA3;*/
 		padding-bottom:8px;
-		padding-left:15px;
+
 
 	}
 
@@ -161,9 +172,9 @@ html{
 
 	#underlinetitle{
 		text-align:left;
-		border-bottom: 6px solid #C8DDA3;
+		/*border-bottom: 6px solid #C8DDA3;*/
 		padding-bottom:8px;
-		padding-left:15px;
+
 	}
 
 	.customcardsize{
@@ -215,9 +226,9 @@ html{
 
 	#underlinetitle{
 		text-align:left;
-		border-bottom: 6px solid #C8DDA3;
+			/*border-bottom: 6px solid #C8DDA3;*/
 		padding-bottom:8px;
-		padding-left:15px;
+
 	}
 
 }
@@ -232,8 +243,16 @@ html{
 }
 */
 
+.typoTitre{
+	font-family: 'BreeW01-Semibold'
+}
+.typoTexte{
+	font-family:  'Basic Sans Regular'
+}
+
 .card-text{
 	font-size:0.9rem;
+	text-align: justify;
 }
 
 
@@ -265,6 +284,7 @@ html{
 .s2 h2, .s3 h2, .s4 h2, .s5 h2{
 
 	font-size: 1.5rem;
+	font-family: 'BreeW01-Semibold'
 }
 
 
@@ -282,7 +302,7 @@ html{
 }
 
 
-.s2 h1, .s2 h2, .s3 h2, .s4 h2{
+.s2 h1, .s2 h2, .s3 h2, .s4 h2, .s5 h2{
 
 	margin-top: 4rem;
 
@@ -291,6 +311,8 @@ html{
 
 .card-title{
 	font-size:1.45rem;
+	font-family: 'BreeW01-Semibold';
+	color: rgb(95,129,82);
 }
 
 @media (max-width:1200px) {
@@ -471,7 +493,7 @@ html{
 
 
 #dynamitebcg{
-	background: url('dynamite.png') no-repeat center top;
+	background: url('dynamite4.PNG') no-repeat center top;
 	background-size:70%;
 }
 
@@ -536,7 +558,7 @@ html{
 
 
 #ideabcg{
-	background: url('idea1.jpg') no-repeat center bottom;
+	background: url('idea.PNG') no-repeat center top;
 	background-size:120%;
 }
 
@@ -585,7 +607,6 @@ table, tr, th{
 
 ul li {
 
-  padding-left: 20px;
   position: relative;
   font-size: 0.9rem;
 
@@ -785,7 +806,7 @@ a:hover, a:focus {
 .FormDesign0{
 	width:80%;
 	border-radius:12px;
-	box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+	box-shadow:  0 5px 5px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.05);
 
 }
 
@@ -793,7 +814,7 @@ a:hover, a:focus {
 	background-color:#f1f6f9;
 	width:360px;
 	border-radius:12px;
-	box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+	box-shadow:  0 5px 5px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.05);
 
 }
 
@@ -828,7 +849,7 @@ body {
    place-items: center;
 
    background: var(--background);
-   font-family: 'Source Code Pro', monospace;
+   font-family: 'Basic Sans Regular', 'Source Code Pro', monospace;
 
    text-rendering: optimizelegibility;
    -webkit-font-smoothing: antialiased;
