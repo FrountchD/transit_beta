@@ -1,6 +1,7 @@
 from flask import Flask, render_template, flash, request, redirect, url_for
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
+from wtforms.validators import DataRequired
 #from wtforms.fields.html5 import EmailField
 from flask_mail import Mail, Message
 import os
@@ -18,10 +19,10 @@ app.config['SECRET_KEY']= client.get_secret('passwordcfr').value
 
 
 class contactForm(FlaskForm):
-    name        = StringField("Nom Prénom")
-    adresseMail = StringField("Adresse mail")
-    codePost    = StringField("Code Postal")
-    textMess    = TextAreaField("Ton Message")
+    name        = StringField("Nom Prénom",validators=[DataRequired(message="Entrez un nom.")])
+    adresseMail = StringField("Adresse mail", validators=[DataRequired(message="Entrez une adresse mail valide.")])
+    codePost    = StringField("Code Postal", validators=[DataRequired(message="Entrez un code postal.")])
+    textMess    = TextAreaField("Ton Message", ,validators=[DataRequired(message="On dirait que tu as oublié le message.")])
     submit      = SubmitField("Envoi")
 
 app.config.update(dict(
@@ -57,7 +58,7 @@ def indexPage():
         mail.send(msg)
 
         flash("Un énorme merci à toi !")
-        flash("T'oublie pas le questionnaire ? ")
+        flash("T'oublies pas le questionnaire ? ")
 
         form.name.data = ''
         form.name.data = ''

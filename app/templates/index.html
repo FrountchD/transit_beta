@@ -21,6 +21,8 @@
 
   <body style="font-size:0 !important;">
 
+    <button onclick="topFunction()" id="myBtnToTop" title="Go to top" style="width:40px; height:40px;"></button>
+
     <div id="fullpage">
 
 
@@ -34,8 +36,8 @@
 
                   <!-- Toggler/collapsibe Button -->
                   <button class="navbar-toggler ml-auto custom-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon">
-                      <i class="fas fa-bars" style="color:#fff; font-size:0px;"></i>
+                    <span id="icon-toggle" class="navbar-toggler-icon">
+                      <!-- <i class="fas fa-bars" style="color:#fff; font-size:0px;"></i> -->
                     </span>
                   </button>
 
@@ -103,7 +105,7 @@
 
               <!-- Display on one line for xl screens -->
               <div class="col-12 col-xl-11 mt-5 pt-5 pt-lg-0 pl-xl-5">
-                <h1 style="margin-left: 15px; font-weight: bold;"> S'ALIMENTER INTELLIGEMMENT... <br class="d-xl-none"/> T'Y PENSES AUSSI TOI ? </h1>
+                <h1 style="margin-left: 15px; font-weight: bold;"> S'ALIMENTER INTELLIGEMMENT... <br class="d-xl-none"/> T'Y PENSES AUSSI ? </h1>
               </div>
               <!--
               <div class="col-11 d-none d-xl-block">
@@ -197,7 +199,7 @@
             <!-- IMAGE  when horizontal and vertical for small screens -->
             <div class="col-md-3  d-xl-none d-flex card-header pt-0 pb-0 justify-content-center earthsize" style=" overflow:hidden;">
 
-                <img src="/static/planet2.png" class="card-img earthsize" style="width:100%; height:100%; object-fit:contain;">
+                <img src="/static/planet2_small.png" class="card-img earthsize" style="width:100%; height:100%; object-fit:contain;">
 
             </div>
 
@@ -221,7 +223,7 @@
 
       <div class="d-none d-xl-block col-xl-4" style="margin-top:15px;">
 			 <div class="d-flex my-auto ">
-			 	<img class="constat"  src="/static/planet2.png">
+			 	<img class="constat"  src="/static/planet2_small.png">
 			 </div>
      </div>
 
@@ -234,7 +236,7 @@
             <!-- IMAGE  when horizontal and vertical for small screens -->
             <div class="col-md-3  d-xl-none d-flex card-header pt-0 pb-0 justify-content-center earthsize" style="overflow:hidden;">
 
-                <img src="/static/initiatives_2.png" class="card-img" style="object-fit:cover;">
+                <img src="/static/initiatives_2_small.jpg" class="card-img" style="object-fit:cover;">
 
             </div>
 
@@ -272,7 +274,7 @@
 
       <div class="d-none d-xl-block col-xl-3" style="margin-top:30px;">
        <div class="d-flex my-auto">
-        <img class="constat"  src="/static/tsunami.PNG">
+        <img class="constat"  src="/static/tsunami_small.jpg">
        </div>
       </div>
 <!--
@@ -299,7 +301,7 @@
             <!-- IMAGE  when horizontal and vertical for small screens -->
             <div class="col-md-3  d-xl-none d-flex card-header pt-0 pb-0 justify-content-center earthsize" style="overflow:hidden;">
 
-                <img src="/static/tsunami.PNG" class="card-img" style="object-fit:cover;">
+                <img src="/static/tsunami_small.jpg" class="card-img" style="object-fit:cover;">
 
             </div>
 
@@ -331,7 +333,7 @@
     <div class="d-none d-xl-block col-xl-3" style="margin-top:30px;">
      <div class="d-flex my-auto">
 
-      <img class="constat"  src="/static/initiatives_2.png">
+      <img class="constat"  src="/static/initiatives_2_small.jpg">
 
      </div>
 
@@ -407,7 +409,7 @@
                                   <!-- IMAGE  when horizontal and vertical for small screens -->
                                   <div class="d-none d-md-block col-md-4 card-header" style="background-color:white; border-bottom:none;">
 
-                                      <img src="/static/dynamite4.PNG" class="card-img" style="width:100%; height:100%;object-fit:contain; max-height:220px;">
+                                      <img src="/static/dynamite4_small.jpg" class="card-img" style="width:100%; height:100%;object-fit:contain; max-height:220px;">
 
                                   </div>
 
@@ -437,7 +439,7 @@
 
                                 <!-- quote for below lg screens -->
                                 <div class="col-10 offset-1 d-lg-none pt-5 bt-5 " style="text-align-center">
-                                  <p style="font-size:1.2rem; font-style:italic bold; color:rgb(255,140,0);"> <q> Sois le changement que tu veux voir dans le monde.  </q> </p>
+                                  <p style="font-size:1.2rem; font-style:italic bold; color:rgb(255,140,0);text-align:center;"> <q> Sois le changement que tu veux voir dans le monde.  </q> </p>
                                 </div>
 
 
@@ -465,7 +467,7 @@
                                  <!-- IMAGE  when horizontal and vertical for small screens -->
                                  <div class="d-none d-md-block col-md-4 card-header" style="background-color:white; border-bottom:none;">
 
-                                     <img src="/static/idea.PNG" class="card-img" style=" height:100%; width:100%; object-fit:cover;">
+                                     <img src="/static/idea_small.jpg" class="card-img" style=" height:100%; width:100%; object-fit:cover;">
 
                                  </div>
 
@@ -508,9 +510,9 @@
                             				<div class="col">
                             					<h2 class="pb-4 mt-xl-5 text-center text-md-left" > <span id="underlinetitle" >ET SI ON LE CR&EacuteAIT CE R&EacuteSEAU ? </span>  </h2>
                             					<!--  <hr class="divider py-1 bg-dark" /> -->
-                                      <p class="typoTexte" style="font-size:0.9rem;"> Je souhaiterais créer un média structuré où l’on pourrait rassembler, partager, défier, ces idées et ces solutions existantes d’alternatives plus durables, bio, écologiques,responsables et saines. </p>
-                                      <p class="typoTexte" style="font-size: 0.9rem;"> Un endroit où producteurs et consommateurs pourraient échanger sur des produits mais aussi leurs lieux d'achats, de livraison ou de collecte, de recettes, de recyclage,... un réseau qui soit vivant, interactif et social ! </p>
-                                      <p class="typoTexte" style="font-size: 0.9rem;"> Un réseau qui tiendrait compte des contraintes "temps et argent" de chacun mais qui permettrait de se connecter avec des gens de son voisinage afin d'obtenir une solution "locale" pour chacun et chacune.   </p>
+                                      <p class="typoTexte" style="font-size:0.9rem; text-align:justify;"> Je souhaiterais créer un média structuré où l’on pourrait rassembler, partager, défier, ces idées et ces solutions existantes d’alternatives plus durables, bio, écologiques,responsables et saines. </p>
+                                      <p class="typoTexte" style="font-size: 0.9rem; text-align:justify;"> Un endroit où producteurs et consommateurs pourraient échanger sur des produits mais aussi leurs lieux d'achats, de livraison ou de collecte, de recettes, de recyclage,... un réseau qui soit vivant, interactif et social ! </p>
+                                      <p class="typoTexte" style="font-size: 0.9rem; text-align:justify;"> Un réseau qui tiendrait compte des contraintes "temps et argent" de chacun mais qui permettrait de se connecter avec des gens de son voisinage afin d'obtenir une solution "locale" pour chacun et chacune.   </p>
 
 
                             				</div>
@@ -667,10 +669,10 @@
 
 
                                            <div class="pb-4 mb-4" style="text-align: center; border-radius:8px;">
-                                             <img src="/static/voteyesno.jpg" class="card-img earthsize FormDesign0" style="height:250px; object-fit:cover; background-position:center bottom;">
+                                             <img src="/static/voteyesno_small.jpg" class="card-img earthsize FormDesign0" style="height:250px; object-fit:cover; background-position:center bottom;">
                                            </div>
 
-                                           <p class="pb-3 text-align-left" style="font-size:0.9rem;"> Promis, ce ne sera ni trop long, ni trop pénible (y'a même des blagues) et ce n'est pas une Google Sheet! C'est parti ?   </p>
+                                           <p class="pb-3 text-align-left" style="font-size:0.9rem;"> Promis, ce ne sera ni trop long ni trop pénible et il y a même des blagues ! C'est parti ?   </p>
 
 
 
@@ -701,7 +703,7 @@
                                         <form class="" method="post">
                                           {{form.hidden_tag()}}
                                           {{form.name.label(class="pl-3 pt-3")}}
-                                          {{form.name(class="inputunderline pb-3 ml-3", style="width:320px; padding-bottom:0.1rem !important;", placeholder="Ella Transité")}}
+                                          {{form.name(class="inputunderline pb-3 ml-3", style="width:320px; padding-bottom:0.1rem !important;", placeholder="Ella Transité", required="required")}}
 
 
                                           {{form.hidden_tag()}}
