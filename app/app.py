@@ -19,10 +19,10 @@ app.config['SECRET_KEY']= client.get_secret('passwordcfr').value
 
 
 class contactForm(FlaskForm):
-    name        = StringField("Nom Prénom",validators=[DataRequired(message="Entrez un nom.")])
+    name        = StringField("Nom Prénom", validators=[DataRequired(message="Entrez un nom.")])
     adresseMail = StringField("Adresse mail", validators=[DataRequired(message="Entrez une adresse mail valide.")])
     codePost    = StringField("Code Postal", validators=[DataRequired(message="Entrez un code postal.")])
-    textMess    = TextAreaField("Ton Message", ,validators=[DataRequired(message="On dirait que tu as oublié le message.")])
+    textMess    = TextAreaField("Ton Message", validators=[DataRequired(message="On dirait que tu as oublié le message.")])
     submit      = SubmitField("Envoi")
 
 app.config.update(dict(
