@@ -10,19 +10,12 @@ $(document).ready(function() {
 $(".navbar-toggler").click(function(event, c){
     //$(event.target).addClass("disabled");
     $("nav").toggleClass("navbar-white");
+    $("#icon-toggle").toggleClass("cross-icon");
     //setTimeout(()=>{
     //    $(event.target).removeClass("disabled");
     //},500);
 });
 
-
-$(".navbar-toggler").click(function(event, c){
-
-        $("#icon-toggle").toggleClass("cross-icon");
-    setTimeout(()=>{
-        $(event.target).removeClass("disabled");
-    },500);
-});
 
 
 function scrollToAnchor(aid){
