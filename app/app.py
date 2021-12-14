@@ -6,12 +6,12 @@ from wtforms.validators import DataRequired
 from flask_mail import Mail, Message
 import os
 
-#from azure.keyvault.secrets import SecretClient
-#from azure.identity import DefaultAzureCredential
+from azure.keyvault.secrets import SecretClient
+from azure.identity import DefaultAzureCredential
 
-#credential =  DefaultAzureCredential()
-#keyVaultName = os.environ["KEY_VAULT_NAME"]
-#client     = SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
+credential =  DefaultAzureCredential()
+keyVaultName = os.environ["KEY_VAULT_NAME"]
+client     = SecretClient(vault_url=f"https://{keyVaultName}.vault.azure.net/", credential=credential)
 
 
 app = Flask(__name__)
@@ -32,7 +32,7 @@ app.config.update(dict(
     MAIL_USE_TLS = True,
     MAIL_USE_SSL = False,
     MAIL_USERNAME = 'transitionalimentairebe@gmail.com',
-    MAIL_PASSWORD = 'beuh1002' #client.get_secret('passwordmail').value,
+    MAIL_PASSWORD = client.get_secret('passwordmail').value,
 ))
 
 
@@ -75,4 +75,4 @@ def indexPage():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=80, debug=True)
