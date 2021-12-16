@@ -8,83 +8,6 @@
 }
 
 
-/* Navigation bar */
-
-.navbar-custom {
-	/*background: rgba(0,0,0,0.6);*/
-	/*background: rgba(255,255,255);*/
-	background: none;
-	color:black;
-	max-width:100%;
-}
-
-
-
-
-
-.navbar-white{
-	background: white;
-
-}
-
-
-@media (min-width:768px){
-	.navbar-white{
-		background: none;
-	}
-}
-
-
-white !important;
-
-
-.disabled{
-	pointer-events:none;
-}
-
-
-.custom-toggler.navbar-toggler {
-  border-color: rgb(255,255,255);
-}
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-
-.cross-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-	position: relative;
-}
-
-.cross-icon::before{
-  position: absolute;
-  font-family: 'FontAwesome';
-  top: 0;
-  left: 10px;
-  content: "\f00d";
-
-}
-
-
-
-a {
-	color: black;
-	font-family: 'Basic Sans Regular', 'Source Code Pro', monospace; /*font-family: "Verdana", sans-serif;  #font-family: "Lucida Console", Courier, monospace;*/
-}
-
-a:hover{
-	color: green;
-}
-
-
-@media (min-width:768px){
-	a {
-		color: white;
-	}
-
-}
-
 
 
 /* JUMBOTRON STYLING */
@@ -483,7 +406,7 @@ textarea.input100 {
 
   background-color: #C8DDA3 !important; /* #57b846;*/
   /*border-radius: 25px;*/
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Basic Sans Regular';
   /*font-family: "Verdana", sans-serif; #Poppins-Regular;*/
   font-size: 16px;
   color: black; /*#fff;*/

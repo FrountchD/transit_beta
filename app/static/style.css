@@ -1,0 +1,210 @@
+@import url(//db.onlinewebfonts.com/c/d09c32f6114a7e885d322df6774281f8?family=BreeW01-Semibold);
+@import url(//db.onlinewebfonts.com/c/927699cb752d1b76650593a4ad6710b8?family=Basic+Sans+Regular);
+
+@font-face {
+	font-family: "BreeW01-Semibold";
+	src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot");
+	src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot?#iefix") format("embedded-opentype"),
+	      url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff2") format("woff2"),
+				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff") format("woff"),
+				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.ttf") format("truetype"),
+				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.svg#BreeW01-Semibold") format("svg");
+	font-display: swap;}
+
+@font-face {
+	font-family: "Basic Sans Regular";
+	src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.eot");
+	src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.eot?#iefix") format("embedded-opentype"),
+	     url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff2") format("woff2"),
+			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff") format("woff"),
+			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.ttf") format("truetype"),
+			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.svg#Basic Sans Regular") format("svg");
+	font-display:swap;}
+
+
+
+
+
+/* HTML AND BODY  */
+
+
+  html{
+  	-webkit-text-size-adjust:100%;
+  }
+
+
+
+  .typoTitre{ font-family: 'BreeW01-Semibold'}
+  .typoTexte{ font-family:  'Basic Sans Regular'}
+
+
+
+
+  
+
+/* Navigation bar */
+
+  .navbar-custom {
+  	/*background: rgba(0,0,0,0.6);*/
+  	/*background: rgba(255,255,255);*/
+  	background: none;
+  	color:black;
+  	max-width:100%;
+  }
+
+
+  .navbar-white{
+  	background: white;
+
+  }
+
+
+  @media (min-width:768px){
+  	.navbar-white{
+  		background: none;
+  	}
+  }
+
+  .menu-size{
+  	font-size:1.0rem !important;
+  }
+
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .cross-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  	position: relative;
+  }
+  .cross-icon::before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 0;
+    left: 10px;
+    content: "\f00d";
+  }
+  a {
+  	color: black;
+  	font-family: 'Basic Sans Regular', 'Source Code Pro', monospace; /*font-family: "Verdana", sans-serif;  #font-family: "Lucida Console", Courier, monospace;*/
+  }
+  a:hover{
+  	color: green;
+  }
+
+
+  @media (min-width:768px){
+  	a {
+  		color: white;
+  	}
+  }
+
+
+
+
+/* Button to go to top of page */
+
+  #myBtnToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(95,129,82); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+
+  #myBtnToTop::before{
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: -7px;
+    left: 8px;
+    content: "\f102";
+    font-size: 200%;
+  }
+
+
+  #myBtnToTop:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+
+
+  /* SECTION S1 */
+
+  .s1{
+  	background-size: cover;
+  	background-position:center top;
+  	min-height: 600px;
+  }
+
+  .s1::before{
+  	content: "";
+  	position: absolute;
+  	display: inline-block;
+  	top:0px;
+  	right:0px;
+  	bottom:0px;
+  	left:0px;
+  	background-color:rgba(0,0,0,0.35);
+  	background-position: center top;
+
+  }
+
+  #section1{
+  	background:url('imagefond_alt_2_resized.webp');
+  	background-size:cover;
+  	background-position: right, bottom;
+  }
+
+
+
+
+
+
+  .s1 h1{
+  	font-size: 1.6rem ;
+  	line-height: 1.5;
+  	font-weight: bold;
+  	color: white;
+  	text-align: center;
+  	font-family: 'BreeW01-Semibold','Source Code Pro', monospace;
+  }
+
+  @media (min-width:576px) {
+  	.s1 h1{
+  		font-size: 1.8rem;
+  	}
+  }
+  @media (min-width:768px) {
+  	.s1 h1{
+  		font-size: 2.2rem;
+  	}
+  }
+
+  .s1 p{
+  	text-padding-left: -20px;
+  	font-size:1.2rem;
+  	text-align: justify;
+
+  	margin-top: 2rem;
+  	margin-bottom: 3rem;
+
+  	color: white;
+  	font-family: 'Basic Sans Regular', 'Source Code Pro', monospace;
+  }
+
+  .alignbutton{
+  	text-align:center;
+  }
