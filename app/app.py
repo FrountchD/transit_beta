@@ -53,7 +53,7 @@ def indexPage():
 
         newline= '\n'
 
-        msg = Message(f"Vous avez reçu un nouveau message de {name.upper()}", sender =   'transitionalimentairebe@gmail.com', recipients = ['transitionalimentairebe@gmail.com'])
+        msg = Message(f"Initiative Reseau Social Transtion Alimentaire. Nouveau message de {name.upper()}", sender =   'transitionalimentairebe@gmail.com', recipients = ['transitionalimentairebe@gmail.com'])
         msg.body = f"This is a message from {name}, code postal {codepost}, email {email} with message {newline}{newline} {messageM}"
         mail.send(msg)
 

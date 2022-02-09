@@ -1,0 +1,720 @@
+<!--
+                                    <div class="row mb-5">
+
+                                      <div class="col-6 col-md-3">
+                                        <a  href="https://www.epiceriesauvage.be/">  <img src="/static/partenaires/lebiosauvage.webp" class="card-img earthsize logopartenaire"></a>
+                                      </div>
+
+                                      <div class="col-6 col-md-3">
+                                        <a  href="https://urbanfishfarm.be">  <img src="/static/partenaires/urbanfishfarm.webp" class="card-img earthsize logopartenaire"></a>
+                                      </div>
+                                      <div class="col-6 col-md-3">
+                                        <a  href="https://www.aupaysdelepeautre.be">  <img src="/static/partenaires/aupaysdelepeautre.webp" class="card-img earthsize logopartenaire" ></a>
+                                      </div>
+                                      <div class="col-6 col-md-3">
+                                        <a  href="https://www.agricovert.be/">  <img src="/static/partenaires/agricovert.webp" class="card-img earthsize logopartenaire" ></a>
+                                      </div>
+                                      <div class="col-6 col-md-3">
+                                        <a  href="https://www.farm.coop">  <img src="/static/partenaires/farm.webp" class="card-img earthsize logopartenaire" ></a>
+                                      </div>
+
+                                    </div>
+-->
+
+<!--
+
+                                    <div class="row mb-5">
+                                      <div class="col-4 col-md-2">
+                                        <a  href="https://www.letrac.be/">  <img src="/static/partenaires/trac.webp" class="card-img earthsize logopartenaire"></a>
+                                      </div>
+                                      <div class="col-4 col-md-2">
+                                        <a  href="https://www.aupaysdelepeautre.be">  <img src="/static/partenaires/aupaysdelepeautre.webp" class="card-img earthsize logopartenaire" ></a>
+                                      </div>
+                                      <div class="col-4 col-md-2">
+                                        <a  href="https://www.agricovert.be/">  <img src="/static/partenaires/agricovert.webp" class="card-img earthsize logopartenaire" ></a>
+                                      </div>
+
+                                      <div class="col-4 col-md-2">
+                                        <a  href="https://www.sequoia.bio">  <img src="/static/partenaires/sequoia.svg" class="card-img earthsize logopartenaire"></a>
+                                      </div>
+                                      <div class="col-4 col-md-2">
+                                        <a  href="https://www.farm.coop">  <img src="/static/partenaires/farm.webp" class="card-img earthsize logopartenaire" ></a>
+                                      </div>
+                                      <div class="col-4 col-md-2">
+                                        <a  href="https://thebarn.bio/">  <img src="/static/partenaires/thebarn.webp" class="card-img earthsize logopartenaire" ></a>
+                                      </div>
+                                    </div>
+-->
+
+
+
+
+* {
+	 box-sizing: border-box;
+}
+
+:root {
+	 --background: white;
+
+	 --primary: #ff1ead;
+	 --secondary: #1effc3;
+
+	 --card-size: 300px;
+}
+
+body {
+	 height: 100vh;
+	 margin: 0;
+	 display: grid;
+	 place-items: center;
+
+	 background: var(--background);
+	 font-family: 'Basic Sans Regular', 'Source Code Pro', monospace;
+
+	 text-rendering: optimizelegibility;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+#bodyT{
+	font-size:0;
+	margin:0px;
+	padding:0px;
+	background-color:#f0fff0;
+}
+
+.jumbotron {
+	background-position: center center;  /* image centering */
+}
+
+.jumbotron_special{
+  background-image: url("/static/jumbotron_bg.jpg");
+  background-size: cover;
+  /* width: 100%; */
+  min-height: 600px;
+}
+
+.jumbotron::before{
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background-color:rgba(0,0,0,0.5);
+
+}
+
+.jumbotron h1, .jumbotron p{
+  color: white;
+	font-family: "Verdana", sans-serif; #"Brush Script MT", cursive;
+
+
+}
+
+.jumbotron p{
+	text-padding-left: -20px;
+	font-size:1rem;
+	text-align: justify;
+
+}
+
+.jumbotron h1{
+	font-size:1.6rem;
+	text-align: center;
+}
+
+
+.paddingLeft{
+	padding-left:30px;
+}
+.alignbutton{
+	text-align:center;
+}
+@media (min-width:768px) {
+	.jumbotron p{
+		font-size: 1.2rem;
+	}
+	 .jumbotron h1{
+		 font-size:2rem;
+		 text-align:left;
+	 }
+	.paddingLeft{
+		padding-left: 50px;
+	}
+	.alignbutton{
+		text-align:left;
+	}
+}
+@media (min-width:992px) {
+	.paddingLeft{
+		padding-left:100px;
+	}
+}
+
+#Apropos p, #QuiSuisJeContent p, #ContactContent p{
+	font-size: 1rem;
+}
+
+
+#imgperso{
+	border-radius: 50%;
+	width:80%;
+}
+
+
+.alignRight{
+	text-align:right;
+}
+
+.topright{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+
+.s3 h2, .s4 h2, .s5 h2{
+
+	font-size: 1.5rem;
+	font-family: 'BreeW01-Semibold';
+	margin-top: 4rem;
+}
+
+
+@media (min-width:992px) {
+	.s3 h2, .s4 h2, .s5 h2{
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width:1200px) {
+.s3 h2, .s4 h2, .s5 h2{
+		font-size: 1.8rem;
+	}
+}
+
+
+	.card-title{
+		font-size:1.45rem;
+		font-family: 'BreeW01-Semibold';
+		color: rgb(95,129,82);
+	}
+
+
+
+
+
+
+
+		 @media (max-width:1200px) {
+
+		 	#planet{
+		 		max-width:200px;
+		 	}
+
+		  }
+
+
+			table, tr, th{
+				font-size: 0.8rem !important;
+				color: black;
+				font-family : Montserrat, sans-serif;
+				line-height: 0.6rem;
+			}
+
+			.centerTable {
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.right-align-class{
+				text-align: left;
+				padding-right: 15px;
+				color: #60773d;
+				font-style:italic;
+			}
+
+
+			iframe {
+				border: none !important;
+			}
+
+
+
+
+			/*======== COLORS ===========*/
+
+			.card[data-color="lightgreen"] {
+			    background: #E8F9CB;
+				/*background-image: url("image_perso.jpg");*/
+			}
+
+			.card[data-color="darkgreen"] {
+			    background: #C8DDA3;
+
+			}
+
+
+			.card[data-color="blue"] {
+			    background: #b8d8d8;
+			}
+			.card[data-color="blue"] .description {
+			    color: #506568;
+			}
+
+			.card[data-color="green"] {
+			    background: #d5e5a3;
+			}
+			.card[data-color="green"] .description {
+			    color: #60773d;
+			}
+			.card[data-color="green"] .category {
+			    color: #92ac56;
+			}
+
+			.card[data-color="yellow"] {
+			    background: #ffe28c;
+			}
+			.card[data-color="yellow"] .description {
+			    color: #b25825;
+			}
+			.card[data-color="yellow"] .category {
+			    color: #d88715;
+			}
+
+			.card[data-color="brown"] {
+			    background: #d6c1ab;
+			}
+			.card[data-color="brown"] .description {
+			    color: #75442e;
+			}
+			.card[data-color="brown"] .category {
+			    color: #a47e65;
+			}
+
+			.card[data-color="purple"] {
+			    background: #baa9ba;
+			}
+			.card[data-color="purple"] .description {
+			    color: #3a283d;
+			}
+			.card[data-color="purple"] .category {
+			    color: #5a283d;
+			}
+
+			.card[data-color="orange"] {
+			    background: #ff8f5e;
+			}
+			.card[data-color="orange"] .description {
+			    color: #772510;
+			}
+			.card[data-color="orange"] .category {
+			    color: #e95e37;
+			}
+
+
+
+
+
+
+
+
+
+			h4, .h4 {
+			    font-size: 1.4rem;
+			    font-weight: 600;
+			    line-height: 1.2em;
+			}
+
+			h6, .h6 {
+			    font-size: 1.2 rem;
+			    font-weight: 600;
+			    text-transform: uppercase;
+			}
+
+
+
+			.cocktail{
+
+				font-size:0.6rem;
+				color:black;
+				margin-bottom:0.2rem;
+				font-family : Montserrat, sans-serif;
+
+			}
+			.dynamite{
+			  background: url('dynamite.png') no-repeat left top;
+			  height: 34px;
+			  padding-top: 7px;
+			  padding-left: 44px;
+			}
+
+
+
+
+
+			#contactFormFinal{
+				background-color: lightgray;
+				padding-top:2rem;
+				border-radius: 20px;
+				width: 400px;
+			}
+
+			#contactFormFinal p, #contactFormFinal label, #contactFormFinal button, #contactFormFinal input, #contactFormFinal textarea{
+				font-size:0.9rem;
+				background-color: lightgray;
+				display: block;
+				width: 100%;
+
+
+
+			}
+
+
+
+			.card-custom {
+			   width: calc(var(--card-size) * 1.586);
+			   height: var(--card-size);
+
+			   border-radius: 0.75rem;
+			   box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+
+			   background: white;
+
+			   display: grid;
+			   grid-template-columns: 40% auto;
+			   color: black;
+
+			   align-items: center;
+
+			   will-change: transform;
+			   transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+
+			}
+
+			.card-custom:hover{
+				transform: scale(1.1);
+				box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
+			}
+
+
+			.wrap-contact100 {
+			  background: #fff;
+			  border-radius: 10px;
+
+			}
+
+
+
+			.control-label{
+				font-size: 12px;
+			}
+
+
+			/*//////////////////////////////////////////////////////////////////
+			[ Contact ]*/
+
+
+
+			.contact100-map {
+			  position: absolute;
+			  z-index: -2;
+			  width: 100%;
+			  height: 100%;
+			  top: 0;
+			  left: 0;
+			}
+
+
+			.container-contact100 {
+			  width: 100%;
+			  min-height: 100vh;
+			  display: -webkit-box;
+			  display: -webkit-flex;
+			  display: -moz-box;
+			  display: -ms-flexbox;
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: center;
+			  align-items: center;
+			  padding: 15px;
+			  background: transparent;
+			  position: relative;
+			  z-index: 1;
+			}
+
+
+
+
+
+			/*==================================================================
+			[ Form ]*/
+
+			.contact100-form {
+			  width: 100%;
+			  display: -webkit-box;
+			  display: -webkit-flex;
+			  display: -moz-box;
+			  display: -ms-flexbox;
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  padding: 43px 88px 57px 190px;
+			}
+
+
+
+
+			.wrap-input100 {
+			  width: 100%;
+			  position: relative;
+			  border-bottom: 1px solid #b2b2b2;
+			  margin-bottom: 26px;
+			}
+
+			.label-input100 {
+			  font-family: "Verdana", sans-serif; #Poppins-Regular;
+			  font-size: 15px;
+			  color: #808080;
+			  line-height: 1.2;
+			  text-align: right;
+
+			  position: absolute;
+			  top: 14px;
+			  left: -180px;
+			  width: 160px;
+
+			}
+
+			/*---------------------------------------------*/
+			.input100 {
+			  font-family: "Verdana", sans-serif; #Poppins-Regular;
+			  font-size: 15px;
+			  color: #555555;
+			  line-height: 1.2;
+
+			  display: block;
+			  width: 100%;
+			  background: transparent;
+			  padding: 0 5px;
+			}
+
+			.focus-input100 {
+			  position: absolute;
+			  display: block;
+			  width: 100%;
+			  height: 100%;
+			  top: 0;
+			  left: 0;
+			  pointer-events: none;
+			}
+
+			.focus-input100::before {
+			  content: "";
+			  display: block;
+			  position: absolute;
+			  bottom: -1px;
+			  left: 0;
+			  width: 0;
+			  height: 1px;
+
+			  -webkit-transition: all 0.6s;
+			  -o-transition: all 0.6s;
+			  -moz-transition: all 0.6s;
+			  transition: all 0.6s;
+
+			  background: #57b846;
+			}
+
+
+			/*---------------------------------------------*/
+			input.input100 {
+			  height: 45px;
+			}
+
+
+			textarea.input100 {
+			  min-height: 115px;
+			  padding-top: 14px;
+			  padding-bottom: 13px;
+			}
+
+
+			.input100:focus + .focus-input100::before {
+			  width: 100%;
+			}
+
+			.has-val.input100 + .focus-input100::before {
+			  width: 100%;
+			}
+
+
+			.contact100-form-btn i {
+			  -webkit-transition: all 0.4s;
+			  -o-transition: all 0.4s;
+			  -moz-transition: all 0.4s;
+			  transition: all 0.4s;
+			}
+
+			.contact100-form-btn:hover i {
+			  -webkit-transform: translateX(10px);
+			  -moz-transform: translateX(10px);
+			  -ms-transform: translateX(10px);
+			  -o-transform: translateX(10px);
+			  transform: translateX(10px);
+			}
+
+
+			/*------------------------------------------------------------------
+			[ Button ]*/
+			.container-contact100-form-btn {
+			  width: 100%;
+			  display: -webkit-box;
+			  display: -webkit-flex;
+			  display: -moz-box;
+			  display: -ms-flexbox;
+			  display: flex;
+			  flex-wrap: wrap;
+			  padding-top: 8px;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			.card-details {
+			   padding: 1rem;
+			}
+
+			.name {
+			   font-size: 1.25rem;
+			}
+
+			.occupation {
+			   font-weight: 600;
+			   color: var(--primary);
+				 font-size: 0.75rem;
+			}
+
+			.card-avatar {
+			   display: grid;
+			   place-items: center;
+			}
+
+			svg {
+			   fill: white;
+			   width: 65%;
+			}
+
+
+
+
+
+			.profile-card-3 h2 small {
+			  display: block;
+			  font-size: 15px;
+			  margin-top:10px;
+			}
+			.profile-card-3 i {
+			  display: inline-block;
+			    font-size: 16px;
+			    color: #232323;
+			    text-align: center;
+			    border: 1px solid #232323;
+			    width: 30px;
+			    height: 30px;
+			    line-height: 30px;
+			    border-radius: 50%;
+			    margin:0 5px;
+			}
+			.profile-card-3 i:hover {
+			  background-color:#232323;
+			  color:#fff;
+			  text-decoration:none;
+			}
+
+
+			.card-big-shadow {
+			    max-width: 320px;
+			    position: relative;
+			}
+
+			.coloured-cards .card {
+			    margin-top: 30px;
+			}
+
+
+			.card[data-radius="none"] {
+			    border-radius: 0px;
+			}
+
+
+
+			.card[data-background="image"] .title, .card[data-background="image"] .stats, .card[data-background="image"] .category, .card[data-background="image"] .description, .card[data-background="image"] .content, .card[data-background="image"] .card-footer, .card[data-background="image"] small, .card[data-background="image"] .content a, .card[data-background="color"] .title, .card[data-background="color"] .stats, .card[data-background="color"] .category, .card[data-background="color"] .description, .card[data-background="color"] .content, .card[data-background="color"] .card-footer, .card[data-background="color"] small, .card[data-background="color"] .content a {
+			    color: #ffffff;
+			}
+			.card .card-just-text .content {
+			    padding: 50px 65px;
+			    text-align: center;
+			}
+			.card[data-color="blue"] .category {
+			    color: #7a9e9f;
+			}
+
+			.content-card{
+			    margin-top:30px;
+			}
+
+			.card-big-shadow:before {
+			    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+			    background-position: center bottom;
+			    background-repeat: no-repeat;
+			    background-size: 100% 100%;
+			    bottom: -12%;
+			    content: "";
+			    display: block;
+			    left: -12%;
+			    position: absolute;
+			    right: 0;
+			    top: 0;
+			    z-index: 0;
+			}
+
+
+
+			.card .content {
+			    padding: 20px 20px 10px 20px;
+			}
+
+			.card .category, .card .label {
+			    font-size: 14px;
+			    margin-bottom: 0px;
+			}
+
+			.card .description {
+			    font-size: 16px;
+			    color: #66615b;
+			}
+
+
+			a:hover, a:focus {
+			    text-decoration: none;
+			}

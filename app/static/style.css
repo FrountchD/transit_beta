@@ -1,25 +1,36 @@
 @import url(//db.onlinewebfonts.com/c/d09c32f6114a7e885d322df6774281f8?family=BreeW01-Semibold);
 @import url(//db.onlinewebfonts.com/c/927699cb752d1b76650593a4ad6710b8?family=Basic+Sans+Regular);
 
+
 @font-face {
 	font-family: "BreeW01-Semibold";
-	src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot");
+
+	src:  url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff2") format("woff2"),
+				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff") format("woff");
+  src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot");
 	src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot?#iefix") format("embedded-opentype"),
-	      url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff2") format("woff2"),
-				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff") format("woff"),
 				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.ttf") format("truetype"),
 				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.svg#BreeW01-Semibold") format("svg");
-	font-display: swap;}
+	font-display: swap;
+  }
 
 @font-face {
 	font-family: "Basic Sans Regular";
+
+  src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff2") format("woff2"),
+			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff") format("woff");
 	src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.eot");
 	src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.eot?#iefix") format("embedded-opentype"),
-	     url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff2") format("woff2"),
-			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff") format("woff"),
-			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.ttf") format("truetype"),
-			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.svg#Basic Sans Regular") format("svg");
+		 	     url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff2") format("woff2"),
+		 			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff") format("woff"),
+		 			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.ttf") format("truetype"),
+		 			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.svg#Basic Sans Regular") format("svg");
 	font-display:swap;}
+
+
+
+
+
 
 
 
@@ -34,13 +45,76 @@
 
 
 
+	/* Typos */
   .typoTitre{ font-family: 'BreeW01-Semibold'}
-  .typoTexte{ font-family:  'Basic Sans Regular'}
+  .typoTexte{ font-family: 'Basic Sans Regular'}
+
+  /* Colors */
+  .colorV{  color: rgb(95,129,82);}
+
+  /* Sizes*/
+	.subtitleSize{font-size:1.45rem;}
+	.textSize{font-size:0.9rem;}
+
+  /* Alignments */
+	.textJustify{text-align:justify;}
+
+	#textAlignEtLeConso{text-align:left;}
+	@media (min-width:1200px) {#textAlignEtLeConso{text-align:center;}}
+
+
+	.slidetitle{
+		text-align:center;
+		padding-bottom:8px;
+		line-height:2;
+		color:rgb(95,129,82);
+	}
+	@media (min-width:768px) {.slidetitle{text-align:left;}}
+
+
+	 .commontitle{
+		 font-size:    1.5rem;
+		 margin-top:   4rem;
+	 }
+
+	 @media (min-width:1200px) {.commontitle{ font-size: 1.8rem;}}
 
 
 
+	/* Button to go to top of page */
 
-  
+	  #myBtnToTop {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Fixed/sticky position */
+	    bottom: 30px; /* Place the button at the bottom of the page */
+	    right: 10px; /* Place the button 30px from the right */
+	    z-index: 99; /* Make sure it does not overlap */
+	    border: none; /* Remove borders */
+	    outline: none; /* Remove outline */
+	    background-color: rgb(95,129,82); /* Set a background color */
+	    color: white; /* Text color */
+	    cursor: pointer; /* Add a mouse pointer on hover */
+	    padding: 15px; /* Some padding */
+	    border-radius: 50%; /* Rounded corners */
+	    font-size: 18px; /* Increase font size */
+	  }
+
+
+	  #myBtnToTop::before{
+	    position: absolute;
+	    font-family: 'FontAwesome';
+	    top: -7px;
+	    left: 8px;
+	    content: "\f102";
+	    font-size: 200%;
+	  }
+
+
+	  #myBtnToTop:hover {
+	    background-color: #555; /* Add a dark-grey background on hover */
+	  }
+
+
 
 /* Navigation bar */
 
@@ -55,9 +129,7 @@
 
   .navbar-white{
   	background: white;
-
   }
-
 
   @media (min-width:768px){
   	.navbar-white{
@@ -105,38 +177,9 @@
 
 
 
-/* Button to go to top of page */
-
-  #myBtnToTop {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 30px; /* Place the button at the bottom of the page */
-    right: 10px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(95,129,82); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
 
 
-  #myBtnToTop::before{
-    position: absolute;
-    font-family: 'FontAwesome';
-    top: -7px;
-    left: 8px;
-    content: "\f102";
-    font-size: 200%;
-  }
 
-
-  #myBtnToTop:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
 
 
 
@@ -163,35 +206,47 @@
   }
 
   #section1{
-  	background:url('imagefond_alt_2_resized.webp');
+  	background:url('images_site/alimentation_durable.webp');
   	background-size:cover;
   	background-position: right, bottom;
   }
 
 
 
-
-
+#boutonLancement{
+	display:inline-block;
+	text-decoration:none;
+	text-align:left;
+	background-color:rgb(195,221,174);
+	color:rgb(95,129,82);
+	font-family: 'Basic Sans Regular', 'Source Code Pro', monospace;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	padding:11px 25px;
+	font-size:14px;
+	line-height:180%;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
 
   .s1 h1{
   	font-size: 1.6rem ;
   	line-height: 1.5;
   	font-weight: bold;
+		margin-left:15px;
   	color: white;
   	text-align: center;
   	font-family: 'BreeW01-Semibold','Source Code Pro', monospace;
   }
 
-  @media (min-width:576px) {
-  	.s1 h1{
-  		font-size: 1.8rem;
-  	}
-  }
-  @media (min-width:768px) {
-  	.s1 h1{
-  		font-size: 2.2rem;
-  	}
-  }
+	 @media (min-width:576px) { .s1 h1{font-size: 1.8rem;}}
+	 @media (min-width:768px) { .s1 h1{font-size: 2.2rem;}}
+	 @media (min-width:1200px){.s1 h1{text-align:left;}}
+
+
+
+
 
   .s1 p{
   	text-padding-left: -20px;
@@ -205,6 +260,538 @@
   	font-family: 'Basic Sans Regular', 'Source Code Pro', monospace;
   }
 
-  .alignbutton{
-  	text-align:center;
-  }
+	@media (min-width:1200px) {.s1 p{ font-size: 1.4rem;}}
+
+
+
+	.alignbutton{ text-align:center;}
+	@media (min-width:768px) { .alignbutton{ text-align:left;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* SECTION S2 - IL ETAIT UNE FOIS LA TRANSITION ALIMENTAIRE*/
+
+	.constat{ width:50%; }
+	@media (min-width:1200px) {.constat {width:100%;}}
+
+
+	.earthsize{ max-height:220px;}
+	.cardsize{max-height:auto;}
+	.customcardsize{max-height:500px;}
+	.customimagecardsize{height:150px;}
+
+	@media (min-width:768px) {
+
+
+		.customcardsize{height:150px;}
+		.customimagecardsize{height:150px;}
+	}
+
+
+	@media (min-width:992px) {
+
+		.customcardsize{height:150px;}
+		.customimagecardsize{height:150px;}
+
+	}
+
+	@media (min-width:1200px) {
+
+		.earthsize{max-height:500px;}
+		.cardsize{max-height:500px;}
+		.customcardsize{height:100% !important;}
+		.customimagecardsize{max-height:200px;}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION S3 - QUI SUIS JE ? */
+
+	/* Presentation card  */
+
+	.card-deck{
+		margin:0 !important;
+	}
+
+	.profile-card-3 {
+	  font-family: 'Source Code Pro', monospace;/*font-family: 'Open Sans', Arial, sans-serif;*/
+	  position: relative;
+	  float: left;
+	  overflow: hidden;
+	  width: 100%;
+	  text-align: center;
+	  height:368px;
+	  border:none;
+		border-shadow:none;
+	}
+
+	.profile-card-3 .background-block {
+	    float: left;
+	    width: 100%;
+	    height: 200px;
+	    overflow: hidden;
+	}
+
+	.profile-card-3 .background-block .background {
+	  width:100%;
+	  vertical-align: top;
+	  opacity: 0.9;
+	  -webkit-filter: blur(0.5px);
+	  filter: blur(0.5px);
+	   -webkit-transform: scale(1.8);
+	  transform: scale(2.8);
+	}
+	.profile-card-3 .card-content {
+	  width: 100%;
+
+		padding-top: 100px;
+		padding-right: 15px;
+		padding-left:15px;
+		padding-bottom:25px;
+	  color:#232323;
+	  float:left;
+	  background:#efefef;
+	  height:300px;
+	  border-radius:0 0 5px 5px;
+	  position: relative;
+	  z-index: 9999;
+
+	}
+
+
+	.profile-card-3 .profile {
+	  border-radius: 50%;
+	  position: absolute;
+	  top: 10%;
+	  left: 50%;
+	  max-width: 200px;
+	  opacity: 1;
+	  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+	  border: 2px solid rgba(255, 255, 255, 1);
+	  -webkit-transform: translate(-50%, 0%);
+	  transform: translate(-50%, 0%);
+	  z-index:99999;
+	}
+
+
+
+	@media (min-width:992px){
+
+		.profile-card-3 { border-shadow:0 2px 2px rgba(204, 197, 185, 0.5);}
+
+		.profile-card-3 .background-block { height: 300px;}
+
+		.profile-card-3 .card-content{
+			margin-top: 3Opx ;
+			height:50%;
+			padding: 15px 25px;
+		}
+		.profile-card-3 .card-content::before {
+				content: '';
+				background: #efefef;
+				width: 220%;
+				height: 180%;
+				left: -40px;
+				top: -160px;
+				position: absolute;
+				z-index: -1;
+				transform: rotate(-13deg);
+		}
+
+
+		.profile-card-3 .profile {
+
+			top: 15%;
+			  max-width: 180px;
+	 }
+	}
+
+
+
+
+
+	.profile-card-3 h2 {
+	  margin: 0 0 5px;
+	  font-weight: 600;
+	  font-size:1.45rem;
+	}
+
+	.profile-card-3 .icon-block{
+	    float:left;
+	    width:100%;
+	    margin-top:15px;
+	}
+	.profile-card-3 .icon-block a{
+	    text-decoration:none;
+	}
+
+
+
+
+	.card-deck .card{
+		margin: 0px !important;
+	}
+
+
+
+
+
+
+
+
+	#dynamitebcg{
+		background: url('images_site/dynamite.webp') no-repeat center bottom;
+		background-size:70%;
+	}
+
+	@media (min-width:768px){ #dynamitebcg{ background:none;}}
+
+	#dynamitebcg::before{
+		content: "";
+		position: absolute;
+		display: inline-block;
+		top:0px;
+		right:0px;
+		bottom:0px;
+		left:0px;
+		background-color:rgba(255,255,255,0.5);
+		background-position: center bottom;
+	}
+
+
+
+
+	.posrel-md{
+		position: relative;
+		padding-bottom:15px;
+	}
+
+
+
+	@media (min-width:768px){
+		.posrel-md{
+			position: inline-block;
+			padding-bottom:0px;
+		}
+
+	}
+
+	.h3-custom{
+		font-size:1.2rem;
+	}
+
+	@media (min-width:992px){ .h3-custom{ font-size: 0.9rem;}}
+
+
+	.h-lg-100{
+		height:500px !important;
+		padding-bottom:30px;
+	}
+
+	@media (min-width:992px){
+		.h-lg-100{
+			height:100% !important;
+			padding-bottom:0px;
+		}
+	}
+
+
+
+
+	#ideabcg{
+		background: url('images_site/transition_alimentaire.webp') no-repeat center top;
+		background-size:120%;
+	}
+
+	@media (min-width:768px){
+		#ideabcg{
+			background:none;
+		}
+	}
+
+	#ideabcg::before{
+		content: "";
+		position: absolute;
+		display: inline-block;
+		top:0px;
+		right:0px;
+		bottom:0px;
+		left:0px;
+		background-color:rgba(255,255,255,0.7);
+		background-position: center bottom;
+	}
+
+
+
+
+
+	ul li {
+
+	  position: relative;
+	  font-size: 0.9rem;
+
+	}
+
+
+
+	.card {
+	    border-radius: 8px;
+	    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+	    background-color: #FFFFFF;
+	    color: #252422;
+	    margin-bottom: 20px;
+	    position: relative;
+	    z-index: 1;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* SECTION S4 - Proposition de réseau */
+
+
+
+
+
+
+
+
+
+
+
+
+  /* SECTION S5 - CONTACTS */
+
+
+	.FormDesign0{
+		width:80%;
+		border-radius:12px;
+		box-shadow:  0 5px 5px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.05);
+
+	}
+
+	.FormDesign{
+		background-color:#f1f6f9;
+		width:360px;
+		border-radius:12px;
+		box-shadow:  0 5px 5px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.05);
+
+	}
+
+	#contactForm2 p, #contactForm2 label, #contactForm2 button, #contactForm2 input, #contactForm2 textarea{
+		font-size:0.9rem;
+		display:block;
+	}
+
+	#contactForm2 input, #contactForm2 textarea{
+		width:320px;
+		background:transparent;
+	}
+
+
+	/* Modal specifics */
+
+	#modalId li, #modalId p{
+		font-family: 'Source Code Pro', monospace;
+	  font-size: 0.9rem;
+	  color: black;
+	  line-height: 0.6;
+	  text-align: left;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-left:10px;
+
+	}
+
+	body.modal-open{
+		overflow: visible;
+		position: inherit;
+	}
+
+
+	/* Form specifics */
+
+
+	label{
+		font-size: 16px;
+	}
+
+
+	input {
+	  box-sizing: border-box;
+	  border-bottom: 1px solid #ccc;
+	  -webkit-transition: 0.5s;
+	  transition: 0.5s;
+	  outline: none;
+			border: none;
+	}
+
+	input:focus {
+	  border-bottom: 1px solid #57b846;
+	}
+
+
+	input[type="number"] {
+	    -moz-appearance: textfield;
+	    appearance: none;
+	    -webkit-appearance: none;
+	}
+
+	input[type="number"]::-webkit-outer-spin-button,
+	input[type="number"]::-webkit-inner-spin-button {
+	    -webkit-appearance: none;
+	}
+
+	textarea {
+	  outline: none;
+	  border: none;
+	}
+
+
+	button {
+		outline: none !important;
+		border: none;
+		background: transparent;
+	}
+
+	button:hover {
+		cursor: pointer;
+	}
+
+	.inputunderline{
+		border-bottom: 1px solid #b2b2b2;
+	}
+
+
+	.contact100-form-btn {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  padding: 0 20px;
+	  /*min-width: 160px;*/
+	  height: 40px;
+
+	  background-color: #C8DDA3 !important; /* #57b846;*/
+	  /*border-radius: 25px;*/
+	  font-family: 'Basic Sans Regular';
+	  /*font-family: "Verdana", sans-serif; #Poppins-Regular;*/
+	  font-size: 16px;
+	  color: black; /*#fff;*/
+	  line-height: 1.2;
+
+	  -webkit-transition: all 0.4s;
+	  -o-transition: all 0.4s;
+	  -moz-transition: all 0.4s;
+	  transition: all 0.4s;
+	}
+
+
+	.contact100-form-btn:hover {
+	  background-color: #333333;
+	}
+
+
+	/*  display specifics */
+
+	input::-webkit-input-placeholder {color: #999999;}
+	input:-moz-placeholder {color: #999999;}
+	input::-moz-placeholder {color: #999999;}
+	input:-ms-input-placeholder {color: #999999;}
+
+	input:focus::-webkit-input-placeholder { color:transparent; }
+	input:focus:-moz-placeholder { color:transparent; }
+	input:focus::-moz-placeholder { color:transparent; }
+	input:focus:-ms-input-placeholder { color:transparent; }
+
+	textarea::-webkit-input-placeholder {color: #999999;}
+	textarea:-moz-placeholder {color: #999999;}
+	textarea::-moz-placeholder {color: #999999;}
+	textarea:-ms-input-placeholder {color: #999999;}
+
+	textarea:focus::-webkit-input-placeholder { color:transparent; }
+	textarea:focus:-moz-placeholder { color:transparent; }
+	textarea:focus::-moz-placeholder { color:transparent; }
+	textarea:focus:-ms-input-placeholder { color:transparent; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* SECTION S6 - PARTENARIATS */
+
+	.logopartenaire{
+		width:80%;
+		height:80%;
+		object-fit:contain;
+	}
+
+
+	/* SECTION S6 - FOOTER */
+
+	.footerText {
+		font-size: 12px;
+		color: white;
+	}
