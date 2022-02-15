@@ -33,8 +33,8 @@
 	@font-face {
 		font-family: "BreeW01-Semibold";
 
-		src:  url("/fonts/Bree-W01-Semibold.woff2") format("woff2"),
-					url("/fonts/Bree-W01-Semibold.woff") format("woff");
+		src:  url("/static/fonts/Bree-W01-Semibold.woff2") format("woff2"),
+					url("/static/fonts/Bree-W01-Semibold.woff") format("woff");
 		font-display: swap;
 	  }
 
@@ -42,8 +42,8 @@
 		@font-face {
 			font-family: "Basic Sans Regular";
 
-		  src: url("/fonts/BasicSans-Regular.woff2") format("woff2"),
-					 url("/fonts/BasicSans-Regular.woff") format("woff");
+		  src: url("/static/fonts/BasicSans-Regular.woff2") format("woff2"),
+					 url("/static/fonts/BasicSans-Regular.woff") format("woff");
 
 			font-display:swap;}
 
