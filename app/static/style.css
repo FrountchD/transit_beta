@@ -1,4 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/d09c32f6114a7e885d322df6774281f8?family=BreeW01-Semibold);
+/* @import url(//db.onlinewebfonts.com/c/d09c32f6114a7e885d322df6774281f8?family=BreeW01-Semibold);
 @import url(//db.onlinewebfonts.com/c/927699cb752d1b76650593a4ad6710b8?family=Basic+Sans+Regular);
 
 
@@ -27,6 +27,25 @@
 		 			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.svg#Basic Sans Regular") format("svg");
 	font-display:swap;}
 
+	*/
+
+
+	@font-face {
+		font-family: "BreeW01-Semibold";
+
+		src:  url("/fonts/Bree-W01-Semibold.woff2") format("woff2"),
+					url("/fonts/Bree-W01-Semibold.woff") format("woff");
+		font-display: swap;
+	  }
+
+
+		@font-face {
+			font-family: "Basic Sans Regular";
+
+		  src: url("/fonts/BasicSans-Regular.woff2") format("woff2"),
+					 url("/fonts/BasicSans-Regular.woff") format("woff");
+
+			font-display:swap;}
 
 
 
@@ -290,6 +309,7 @@
 
 
 	.earthsize{ max-height:220px;}
+	.earthsize2{max-height:220px; min-height:120px;}
 	.cardsize{max-height:auto;}
 	.customcardsize{max-height:500px;}
 	.customimagecardsize{height:150px;}
@@ -343,7 +363,8 @@
 	}
 
 	.profile-card-3 {
-	  font-family: 'Source Code Pro', monospace;/*font-family: 'Open Sans', Arial, sans-serif;*/
+	  /*font-family: 'Source Code Pro', monospace;*/
+		/*font-family: 'Open Sans', Arial, sans-serif;*/
 	  position: relative;
 	  float: left;
 	  overflow: hidden;
