@@ -1,35 +1,3 @@
-/* @import url(//db.onlinewebfonts.com/c/d09c32f6114a7e885d322df6774281f8?family=BreeW01-Semibold);
-@import url(//db.onlinewebfonts.com/c/927699cb752d1b76650593a4ad6710b8?family=Basic+Sans+Regular);
-
-
-@font-face {
-	font-family: "BreeW01-Semibold";
-
-	src:  url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff2") format("woff2"),
-				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.woff") format("woff");
-  src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot");
-	src: url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.eot?#iefix") format("embedded-opentype"),
-				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.ttf") format("truetype"),
-				url("//db.onlinewebfonts.com/t/d09c32f6114a7e885d322df6774281f8.svg#BreeW01-Semibold") format("svg");
-	font-display: swap;
-  }
-
-@font-face {
-	font-family: "Basic Sans Regular";
-
-  src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff2") format("woff2"),
-			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff") format("woff");
-	src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.eot");
-	src: url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.eot?#iefix") format("embedded-opentype"),
-		 	     url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff2") format("woff2"),
-		 			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.woff") format("woff"),
-		 			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.ttf") format("truetype"),
-		 			 url("//db.onlinewebfonts.com/t/927699cb752d1b76650593a4ad6710b8.svg#Basic Sans Regular") format("svg");
-	font-display:swap;}
-
-	*/
-
-
 	@font-face {
 		font-family: "BreeW01-Semibold";
 
