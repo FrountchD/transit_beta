@@ -772,9 +772,10 @@
   /* SECTION S6 - PARTENARIATS */
 
 	.logopartenaire{
-		width:80%;
-		height:80%;
+		width:90%;
+		height:90%;
 		object-fit:contain;
+		max-height:150px;
 	}
 
 
