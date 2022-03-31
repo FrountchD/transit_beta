@@ -4,3 +4,6 @@ flask_wtf
 wtforms
 azure-identity
 azure-keyvault-secrets
+dnspython==2.2.1
+
+Flask-PyMongo==2.3.0
