@@ -5,6 +5,10 @@ from wtforms.validators import DataRequired
 #from wtforms.fields.html5 import EmailField
 from flask_mail import Mail, Message
 import os
+from flask_pymongo import pymongo
+
+
+
 
 from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
@@ -37,6 +41,18 @@ app.config.update(dict(
 
 
 mail = Mail(app)
+
+DB_USER = client.get_secret('dbuser')
+DB_PWD = client.get_secret('dbpwd')
+
+CONNECTION_STRING = "mongodb+srv://"+DB_USER+":"+DB_PWD+"@transitalim2022.nn8r0.mongodb.net/customerdb?retryWrites=true&w=majority"
+
+client = pymongo.MongoClient(CONNECTION_STRING)
+db=client.get_database('customerdb')
+user_collection = pymongo.collection.Collection(db, 'user_collection')
+
+
+
 
 @app.route('/', methods=["GET","POST"])
 def indexPage():
@@ -72,7 +88,11 @@ def indexPage():
 
     return render_template('index.html', form=form, name=name)
 
-
+@app.route('/testdb')
+def test():
+    db.collection.insert_one({"name":"John5"})
+    db.DataPro.insert_one({"name":"Hello World 3", "tvanum":"qqchose", "type":"autre" })
+    return "connected to the data base"
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=80, debug=True)
