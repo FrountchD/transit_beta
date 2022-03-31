@@ -42,8 +42,8 @@ app.config.update(dict(
 
 mail = Mail(app)
 
-DB_USER = client.get_secret('dbuser')
-DB_PWD = client.get_secret('dbpwd')
+DB_USER = client.get_secret('dbuser').value
+DB_PWD = client.get_secret('dbpwd').value
 
 CONNECTION_STRING = "mongodb+srv://"+DB_USER+":"+DB_PWD+"@transitalim2022.nn8r0.mongodb.net/customerdb?retryWrites=true&w=majority"
 
