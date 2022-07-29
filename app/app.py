@@ -1,14 +1,21 @@
-from flask import Flask, render_template, flash, request, redirect, url_for
+from flask import Flask, render_template, flash, request, redirect, url_for, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired
 #from wtforms.fields.html5 import EmailField
 from flask_mail import Mail, Message
 import os
-from flask_pymongo import pymongo
+from flask_pymongo import pymongo, ObjectId
 
+from forms import AddForm, LoginForm
 
+from flask_login import login_user, login_required, logout_user, current_user
 
+from werkzeug.security import generate_password_hash, check_password_hash
+from models import User
+
+from flask_login import LoginManager
+login_manager = LoginManager()
 
 from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
@@ -41,6 +48,16 @@ app.config.update(dict(
 
 
 mail = Mail(app)
+
+
+
+login_manager.init_app(app)
+login_manager.login_view = 'login'  #name of the view where they go to for login.
+
+@login_manager.user_loader
+def load_user(user_id):
+    user_json = db.portallogin.find_one({'_id': ObjectId(user_id)})
+    return User(user_json)
 
 DB_USER = client.get_secret('dbuser').value
 DB_PWD = client.get_secret('dbpwd').value
@@ -88,11 +105,17 @@ def indexPage():
 
     return render_template('index.html', form=form, name=name)
 
+@app.route('/enquete', methods=["GET","POST"])
+def enquete():
+    return render_template('enquete.html')
+
+
 @app.route('/testdb')
 def test():
     db.collection.insert_one({"name":"John5"})
     db.DataPro.insert_one({"name":"Hello World 3", "tvanum":"qqchose", "type":"autre" })
     return "connected to the data base"
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=80, debug=True)

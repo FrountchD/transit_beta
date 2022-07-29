@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Un réseau pour l'alimentation durable à Bruxelles et en Belgique. </title>
+    <meta name="description" content="S'alimenter intelligement, t'y penses aussi ? Bienvenue sur le site d'un citoyen bruxellois qui, comme toi, voudrait contribuer à un monde où notre alimentation serait produite, véhiculée et consommée d'une manière plus éco-responsable. ">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="icon" type="image/png" href="/static/favicon_small.png" sizes="16x16">
+
+
+      <!--
+    <link href="//db.onlinewebfonts.com/c/d09c32f6114a7e885d322df6774281f8?family=BreeW01-Semibold" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/927699cb752d1b76650593a4ad6710b8?family=Basic+Sans+Regular" rel="stylesheet" type="text/css"/>
+  -->
+
+  </head>
+
+
+
+  <body style="font-size:0 !important; background-color:gray">
+
+
+
+    <!-- Navigation bar -->
+
+        <div  style="font-size:16px; height:100px;">
+          <div class="container">
+            <div class="row">
+
+              <nav class="col navbar fixed-top  navbar-expand-md   navbar-custom" >
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler ml-auto custom-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span id="icon-toggle" class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-auto active menu-size" >
+                      <a class="nav-link "  style="color:black;" data-menuanchor="Accueil" href={{url_for('indexPage')}}>Retour</a>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </nav>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- end Navigation bar -->
+
+
+
+
+
+            <div class="container-fluid">
+
+
+
+
+            <!-- texte -->
+            <div class="row gx-4 gx-lg-5 justify-content-center justify-content-xl-start">
+              <div class="col-11 col-md-9 col-xl-8"  style="max-width:900px;">
+
+    		               <p class="pl-xl-5" style="font-size:1.2rem; color:black; max-width:800px;" >   L'enquête a été clôturée le 1er aout 2022. L'analyse des réponses est/sera publiée au cours du mois d'aout 2022 sur la page facebook @reseaumangermalin. </p>
+    		               <p class="pl-xl-5" style="font-size:1.2rem; color:black; "> Une version "gratuite" du questionnaire est toujours en ligne... n'hésite pas à aller y jeter un oeil si ca te démange. </p>
+    		               <br>
+    		               <!-- Button -->
+    		               <div class="alignbutton mb-5 pl-xl-5">
+    			                  <a href="{{url_for('enquete')}}" target="_blank" id="boutonLancement">Démarrer le questionnaire !</a>
+                       </div>
+
+                       <p class="pl-xl-5 mb-3" style="font-size:1.2rem; color:black; font-weight:bold;"> En attendant que ce réseau voit le jour, rejoins-moi sur Facebook !</p>
+                       <div class="alignbutton mb-5 pl-xl-5">
+                         <a class="pl-xl-5" style="font-weight:bold;" href="https://www.facebook.com/ReseauMangerMalin"> <img src="/static/images_site/fb-icon.png" style="width:50px; height:50px;"> </a>
+                         <a class="pl-xl-5" style="font-weight:bold;" href="https://www.instagram.com/ReseauMangerMalin"> <img src="/static/images_site/insta-icon.png" style="width:50px; height:50px;"> </a>
+                      </div>
+    	        </div>
+            </div>
+
+
+          </div>  <!-- End Intro text -->
+
+
+
+
+
+                              		<footer class="bg-light text-center text-lg-start">
+                              		<!-- Copyright -->
+                              		<div class="text-center p-3 footerText" style="background-color: rgba(0, 0, 0, 0.6);">
+                              			<strong>© 2022 Copyright: Francois Dehouck.</strong>
+                              		</div>
+                              		<!-- Copyright -->
+                              		</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='/static/custom.js'></script>
+
+	<script type="text/javascript">
+
+     new fullpage('#fullpage', {
+
+   		responsiveHeight: 815,
+   		responsiveWidth: 992,
+      anchors:['Accueil', 'Intro', 'MonParcours', 'LeProjet', 'Contact', 'Partenaires'],
+      sectionsColor: ['#f2f2f2', '#eef2ed', '#ffffff', 'whitesmoke', '#eef2ed'],
+		});
+
+
+    <!-- pinch zooming on iphone -->
+
+
+    $(document).ready(function() {
+
+        var scale = 1; // initial-scale
+        var r = 0.10;
+
+        $(document).bind('gesturechange',function(event){
+
+            if(event.originalEvent.scale > 1) scale = scale < 1.2 ?  scale : 1.2 ;
+            else  scale : 1 ;
+
+            $('meta[name=viewport]').attr('content', 'width=device-width, minimum-scale='+ scale.toFixed(2) +', maximum-scale='+ scale.toFixed(2) +', user-scalable=yes'); //
+
+        });
+
+    });
+
+
+
+    </script>
+
+  </body>
+</html>
