@@ -7,7 +7,7 @@ from flask_mail import Mail, Message
 import os
 from flask_pymongo import pymongo, ObjectId
 
-from forms import AddForm, LoginForm
+#from forms import AddForm, LoginForm
 
 from flask_login import login_user, login_required, logout_user, current_user
 
