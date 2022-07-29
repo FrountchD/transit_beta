@@ -9,13 +9,13 @@ from flask_pymongo import pymongo, ObjectId
 
 #from forms import AddForm, LoginForm
 
-from flask_login import login_user, login_required, logout_user, current_user
+#from flask_login import login_user, login_required, logout_user, current_user
 
-from werkzeug.security import generate_password_hash, check_password_hash
-from models import User
+#from werkzeug.security import generate_password_hash, check_password_hash
+#from models import User
 
-from flask_login import LoginManager
-login_manager = LoginManager()
+#from flask_login import LoginManager
+#login_manager = LoginManager()
 
 from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
