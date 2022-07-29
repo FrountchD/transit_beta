@@ -51,13 +51,13 @@ mail = Mail(app)
 
 
 
-login_manager.init_app(app)
-login_manager.login_view = 'login'  #name of the view where they go to for login.
+#login_manager.init_app(app)
+#login_manager.login_view = 'login'  #name of the view where they go to for login.
 
-@login_manager.user_loader
-def load_user(user_id):
-    user_json = db.portallogin.find_one({'_id': ObjectId(user_id)})
-    return User(user_json)
+#@login_manager.user_loader
+#def load_user(user_id):
+#    user_json = db.portallogin.find_one({'_id': ObjectId(user_id)})
+#    return User(user_json)
 
 DB_USER = client.get_secret('dbuser').value
 DB_PWD = client.get_secret('dbpwd').value
