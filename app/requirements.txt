@@ -1,5 +1,5 @@
 flask
-flask_mail
+flask_mail==0.9.0
 flask_wtf
 wtforms
 azure-identity
